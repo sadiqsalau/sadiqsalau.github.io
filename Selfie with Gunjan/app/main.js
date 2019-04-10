@@ -215,7 +215,6 @@ class app {
                     return;
                 }
                 checkPermission().then((res)=>{
-                    console.log(res);
                     start(res);
                 }).catch((e)=>{
                     alert("Failed to grant permission!");
