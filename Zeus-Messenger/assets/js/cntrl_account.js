@@ -65,18 +65,13 @@ function accountBob(done){
 	}
 
 	function makeRequest(){
-		var value = '';
 		if(error_cnt){
 			error_cnt.remove();
 		}
 		
-		for(let j = 0; j < form.length; j++){
-			value += `${form[j].name}=${encodeURIComponent(form[j].value)}&`;
-		}
 		xhttp.abort();
-		xhttp.open("POST", form.action, true);
-		xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-		xhttp.send(value);
+		xhttp.open("GET", form.action, true);
+		xhttp.send(null);
 	}
 	
 	function bubble(ev){
