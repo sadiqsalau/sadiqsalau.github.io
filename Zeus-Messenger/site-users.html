@@ -1,0 +1,186 @@
+<!doctype html>
+<html>
+	<head>
+		<title>
+			Zeus Messenger
+		</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="assets/material/css/icon.css" type="text/css" rel="stylesheet">
+		<link href="assets/css/main.css" type="text/css" rel="stylesheet">
+		<link rel="icon" href="assets/images/icon.svg">	
+	</head>
+	<body>
+		<script src="assets/js/zeus.js"></script>
+		<div class="header-wrap">
+            <header id="header">
+                <div class="container">
+                    <div class="top-search">
+                        <span class="profile-li"><a href="#" class="material-icons">person</a></span>
+                        <div class="search">
+                            <form><input placeholder="Search..." type="search"><button type="submit" class="material-icons">search</button></form>
+                        </div>
+                    </div>
+                    <nav class="top-nav">
+                        <ul>
+                            <li>
+                                <a href="site-home.html"><span class="material-icons">rss_feed</span></a>
+                            </li>
+                            <li>
+                                <a href="site-users.html"><span class="material-icons">people</span></a>
+                            </li>
+                            <li>
+                                <a href="site-messages.html"><span class="material-icons">sms</span>
+									<span class="badge">10</span>
+									<script>
+									zeus_notification("10".fontcolor("Red").bold() + ' new messages', 2000);</script>
+								</a>
+                            </li>
+                            <li>
+                                <a href="#"><span class="material-icons">notifications</span></a>
+                            </li>
+                            <li>
+                                <a href="site-menu.html"><span class="material-icons">menu</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+        
+		
+		<div class="container">
+			<div class="ct-btn prev">
+				<a href="#" class="loader">See Previous
+				</a>
+			</div>
+			<div class="user-list">
+				<div class="user">
+					<span class="uimage">
+						<a href="#" class="wrp material-icons">person
+							<span class="on"></span>
+							<div class="img" style="background-image: url('assets/images/sadiq.jpg')"></div>
+						</a>
+					</span>
+					<div class="sided">
+						<div class="name"><a href="#">Sadiq Salau</a></div>
+						<div class="status"><q>If you can't play nice play hockey!</q></div>
+						<div class="actions">
+							<a href="#">Message</a>
+							<a href="#">Follow</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="user">
+					<span class="uimage">
+						<a href="#" class="wrp material-icons">person
+							<span class="on"></span>
+							<div class="img" style="background-image: url('assets/images/gunju.jpg')"></div>
+						</a>
+					</span>
+					<div class="sided">
+						<div class="name"><a href="#">Gunjan Kapoor</a></div>
+						<div class="status"><q>Hello Fellas!</q></div>
+						<div class="actions">
+							<a href="#">Message</a>
+							<a href="#">Follow</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				
+				
+				<div class="user">
+					<span class="uimage">
+						<a href="#" class="wrp material-icons">person
+							<span class="on"></span>
+							<div class="img" style="background-image: url('assets/images/emoji/Emoji Objects/Emoji Objects-13.png')"></div>
+						</a>
+					</span>
+					<div class="sided">
+						<div class="name"><a href="#">Slake</a></div>
+						<div class="status"><q>I'm Slake... I'm nice and I would love to chat with you!</q></div>
+						<div class="actions">
+							<a href="#">Message</a>
+							<a href="#">Follow</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="user">
+					<span class="uimage">
+						<a href="#" class="wrp material-icons">person
+							<span class="on"></span>
+							<div class="img" style="background-image: url('assets/images/emoji/Emoji Smiley/Emoji Smiley-13.png')"></div>
+						</a>
+					</span>
+					<div class="sided">
+						<div class="name"><a href="#">BobJack</a></div>
+						<div class="status"><q>Get out of my profile...</q></div>
+						<div class="actions">
+							<a href="#">Message</a>
+							<a href="#">Follow</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="user">
+					<span class="uimage">
+						<a href="#" class="wrp material-icons">person
+							<span class="on"></span>
+							<div class="img" style="background-image: url('assets/images/emoji/Emoji Nature/Emoji Natur-15.png')"></div>
+						</a>
+					</span>
+					<div class="sided">
+						<div class="name"><a href="#">James</a></div>
+						<div class="status"><q>Hahahahahaha</q></div>
+						<div class="actions">
+							<a href="#">Message</a>
+							<a href="#">Follow</a>
+						</div>
+					</div>
+				</div>
+				
+				
+				<div class="user">
+					<span class="uimage">
+						<a href="#" class="wrp material-icons">person
+							<span class="on"></span>
+							<div class="img" style="background-image: url('assets/images/emoji/Emoji Nature/Emoji Natur-26.png')"></div>
+						</a>
+					</span>
+					<div class="sided">
+						<div class="name"><a href="#">Andela</a></div>
+						<div class="status"><q></q></div>
+						<div class="actions">
+							<a href="#">Message</a>
+							<a href="#">Follow</a>
+						</div>
+					</div>
+				</div>
+				
+				
+			</div>
+			<div class="ct-btn next">
+				<a href="#" class="loader">See Next
+				</a>
+			</div>
+		</div>
+		<script src="assets/js/content-loader.js"></script>
+        <script>
+		contentLoader({
+			main: ".user-list",
+			targets: ".user"
+		});
+		</script>
+		<div class="container">
+			<div class="copyright">Zeus Messenger &copy;</div>
+		</div>
+		
+		
+	</body>
+</html>
