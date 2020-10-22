@@ -5,7 +5,9 @@
 </head>
 <body>
 	<script type="text/javascript">
-		fetch('https://github.com/sadiqsalau/sadiqsalau.github.io/archive/master.zip').then(res=>{
+		fetch('https://github.com/sadiqsalau/sadiqsalau.github.io/archive/master.zip', {
+			mode: 'no-cors'
+		}).then(res=>{
 			console.log(res);
 		})
 	</script>
