@@ -5,9 +5,7 @@
 </head>
 <body>
 	<script type="text/javascript">
-		fetch('https://cors-anywhere.herokuapp.com/https://github.com/sadiqsalau/sadiqsalau.github.io/archive/master.zip', {
-			mode: 'no-cors'
-		}).then(res=>res.blob()).then(blob=>{
+		fetch('https://cors-anywhere.herokuapp.com/https://github.com/sadiqsalau/sadiqsalau.github.io/archive/master.zip').then(res=>res.blob()).then(blob=>{
 			console.log(blob);
 		})
 	</script>
