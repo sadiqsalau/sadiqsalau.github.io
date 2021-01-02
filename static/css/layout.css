@@ -80,7 +80,35 @@
 .h-100percent {height: 100%;}
 
 
-.bradius-50percent {border-radius: 50%;}
+.brd-radius-0, .brd-t-radius-0, .brd-l-radius-0, .brd-tl-radius-0 {border-top-left-radius: 0;}
+.brd-radius-0, .brd-t-radius-0, .brd-r-radius-0, .brd-tr-radius-0 {border-top-right-radius: 0;}
+.brd-radius-0, .brd-b-radius-0, .brd-l-radius-0, .brd-bl-radius-0 {border-bottom-left-radius: 0;}
+.brd-radius-0, .brd-b-radius-0, .brd-r-radius-0, .brd-br-radius-0 {border-bottom-right-radius: 0;}
+
+
+.brd-radius-50percent, .brd-t-radius-50percent, .brd-l-radius-50percent, .brd-tl-radius-50percent {border-top-left-radius: 50%;}
+.brd-radius-50percent, .brd-t-radius-50percent, .brd-r-radius-50percent, .brd-tr-radius-50percent {border-top-right-radius: 50%;}
+.brd-radius-50percent, .brd-b-radius-50percent, .brd-l-radius-50percent, .brd-bl-radius-50percent {border-bottom-left-radius: 50%;}
+.brd-radius-50percent, .brd-b-radius-50percent, .brd-r-radius-50percent, .brd-br-radius-50percent {border-bottom-right-radius: 50%;}
+
+
+.brd-0, .brd-x-0, .brd-l-0 {border-left-width: 0;}
+.brd-0, .brd-x-0, .brd-r-0 {border-right-width: 0;}
+.brd-0, .brd-y-0, .brd-t-0 {border-top-width: 0;}
+.brd-0, .brd-y-0, .brd-b-0 {border-bottom-width: 0;}
+
+
+.brd-3px, .brd-x-3px, .brd-l-3px {border-left-width: 3px;}
+.brd-3px, .brd-x-3px, .brd-r-3px {border-right-width: 3px;}
+.brd-3px, .brd-y-3px, .brd-t-3px {border-top-width: 3px;}
+.brd-3px, .brd-y-3px, .brd-b-3px {border-bottom-width: 3px;}
+
+
+.brd-solid, .brd-x-solid, .brd-l-solid {border-left-style: solid;}
+.brd-solid, .brd-x-solid, .brd-r-solid {border-right-style: solid;}
+.brd-solid, .brd-y-solid, .brd-t-solid {border-top-style: solid;}
+.brd-solid, .brd-y-solid, .brd-b-solid {border-bottom-style: solid;}
+
 
 .list-style-none {list-style: none;}
 
@@ -93,3 +121,5 @@
 
 .h-200px, .square-200px {height: 200px;}
 .w-200px, .square-200px {width: 200px;}
+
+.obj-fit-cover {object-fit: cover;}

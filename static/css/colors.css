@@ -5,3 +5,9 @@
 .bg-color-name-white, .bg-color-hex-fff {background-color: #fff;}
 
 .bg-gradient-primary {background-image: linear-gradient(135deg, #FF5722, #FF9800);}
+
+
+.brd-color-hex-fff, .brd-x-color-hex-fff, .brd-l-color-hex-fff {border-left-color: #fff;}
+.brd-color-hex-fff, .brd-x-color-hex-fff, .brd-r-color-hex-fff {border-right-color: #fff;}
+.brd-color-hex-fff, .brd-y-color-hex-fff, .brd-t-color-hex-fff {border-top-color: #fff;}
+.brd-color-hex-fff, .brd-y-color-hex-fff, .brd-b-color-hex-fff {border-bottom-color: #fff;}
