@@ -1,0 +1,7 @@
+.color-name-black, .color-hex-000 {color: #000;}
+.color-name-white, .color-hex-fff {color: #fff;}
+
+.bg-color-name-black, .bg-color-hex-000 {background-color: #000;}
+.bg-color-name-white, .bg-color-hex-fff {background-color: #fff;}
+
+.bg-gradient-primary {background-image: linear-gradient(135deg, #FF5722, #FF9800);}

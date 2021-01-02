@@ -1,0 +1,23 @@
+* {box-sizing: border-box;}
+html {
+	font-size: 16px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+a {text-decoration: none;}
+
+@media (min-width: 768px)
+{
+	.cst-container {max-width: 760px;}
+}
+
+@media (min-width: 1024px)
+{
+	.cst-container {max-width: 1000px;}
+}
+
+
+.cst-title {transform: rotate(-5deg); font-family: 'Ubuntu', "Kaushan Script", cursive; font-size: 35px;  quotes: "-" "-";}
+.cst-title-quote::before, .cst-title-quote::after {margin: 0px 10px;}
+
+@media (min-width: 400px){
+	.cst-title {font-size: 50px;}
+}

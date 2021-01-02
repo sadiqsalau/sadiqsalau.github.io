@@ -1,0 +1,13 @@
+@font-face {
+	font-family: 'ABeeZee';
+	font-weight: 400;
+	font-style: normal;
+	src: url('../fonts/ABeeZee/ABeeZee-Regular.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ABeeZee';
+	font-weight: 400;
+	font-style: italic;
+	src: url('../fonts/ABeeZee/ABeeZee-Italic.ttf') format('truetype');
+}

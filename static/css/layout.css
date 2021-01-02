@@ -1,0 +1,95 @@
+.pos-static {position: static;}
+.pos-relative {position: relative;}
+.pos-absolute {position: absolute;}
+.pos-fixed {position: fixed;}
+
+.dp-none {display: none;}
+.dp-block {display: block;}
+.dp-inline-block {display: inline-block;}
+
+.dp-flex {display: flex;}
+.dp-inline-flex {display: inline-flex;}
+
+
+.flex-dir-column {flex-direction: column;}
+.flex-dir-column-reverse {flex-direction: column-reverse;}
+.flex-dir-row {flex-direction: row;}
+.flex-dir-row-reverse {flex-direction: row-reverse;}
+
+
+.flex-wrap {flex-wrap: wrap;}
+.flex-wrap-reverse {flex-wrap: wrap-reverse;}
+
+.align-items-center {align-items: center;}
+
+.justify-content-space-btw {justify-content: space-between;}
+
+
+.p-0, .p-x-0, .p-l-0 {padding-left: 0;}
+.p-0, .p-x-0, .p-r-0 {padding-right: 0;}
+.p-0, .p-y-0, .p-t-0 {padding-top: 0;}
+.p-0, .p-y-0, .p-b-0 {padding-bottom: 0;}
+
+
+.p-10px, .p-x-10px, .p-l-10px {padding-left: 10px;}
+.p-10px, .p-x-10px, .p-r-10px {padding-right: 10px;}
+.p-10px, .p-y-10px, .p-t-10px {padding-top: 10px;}
+.p-10px, .p-y-10px, .p-b-10px {padding-bottom: 10px;}
+
+.p-20px, .p-x-20px, .p-l-20px {padding-left: 20px;}
+.p-20px, .p-x-20px, .p-r-20px {padding-right: 20px;}
+.p-20px, .p-y-20px, .p-t-20px {padding-top: 20px;}
+.p-20px, .p-y-20px, .p-b-20px {padding-bottom: 20px;}
+
+
+
+.m-0, .m-x-0, .m-l-0 {margin-left: 0;}
+.m-0, .m-x-0, .m-r-0 {margin-right: 0;}
+.m-0, .m-y-0, .m-t-0 {margin-top: 0;}
+.m-0, .m-y-0, .m-b-0 {margin-bottom: 0;}
+
+.m-5px, .m-x-5px, .m-l-5px {margin-left: 5px;}
+.m-5px, .m-x-5px, .m-r-5px {margin-right: 5px;}
+.m-5px, .m-y-5px, .m-t-5px {margin-top: 5px;}
+.m-5px, .m-y-5px, .m-b-5px {margin-bottom: 5px;}
+
+.m-x-auto, .m-l-auto {margin-left: auto;}
+.m-x-auto, .m-r-auto {margin-right: auto;}
+
+
+.talign-left {text-align: left;}
+.talign-center {text-align: center;}
+.talign-right {text-align: right;}
+
+.fw-100 {font-weight: 100;}
+.fw-200 {font-weight: 200;}
+.fw-300 {font-weight: 300;}
+.fw-400 {font-weight: 400;}
+.fw-500 {font-weight: 500;}
+.fw-600 {font-weight: 600;}
+.fw-700 {font-weight: 700;}
+.fw-800 {font-weight: 800;}
+.fw-900 {font-weight: 900;}
+
+.w-50percent {width: 50%;}
+.w-75percent {width: 75%;}
+.w-100percent {width: 100%;}
+
+.h-50percent {height: 50%;}
+.h-75percent {height: 75%;}
+.h-100percent {height: 100%;}
+
+
+.bradius-50percent {border-radius: 50%;}
+
+.list-style-none {list-style: none;}
+
+
+.min-h-100vh {min-height: 100vh;}
+
+.fs-16px {font-size: 16px;}
+.fs-30px {font-size: 30px;}
+.fs-50px {font-size: 50px;}
+
+.h-200px, .square-200px {height: 200px;}
+.w-200px, .square-200px {width: 200px;}
