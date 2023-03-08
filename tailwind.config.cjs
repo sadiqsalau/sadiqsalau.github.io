@@ -22,6 +22,9 @@ module.exports = {
         sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
         "fredoka-one": "Fredoka One",
       },
+      spacing: {
+        2.5: "0.625rem",
+      },
     },
   },
   plugins: [],
