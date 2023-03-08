@@ -1,3 +1,5 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
@@ -15,6 +17,10 @@ module.exports = {
           800: "#206640",
           900: "#103320",
         },
+      },
+      fontFamily: {
+        sans: ["Quicksand", ...defaultTheme.fontFamily.sans],
+        "fredoka-one": "Fredoka One",
       },
     },
   },
