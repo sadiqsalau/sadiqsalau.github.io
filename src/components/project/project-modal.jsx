@@ -20,13 +20,6 @@ export const ProjectModal = ({ project, closeModal }) => {
     setShowLightbox(true);
   };
 
-  const gotoPrevious = () =>
-    currentImageIndex > 0 && setCurrentIndex(currentImageIndex - 1);
-
-  const gotoNext = () =>
-    currentImageIndex + 1 < project.images.length &&
-    setCurrentIndex(currentImageIndex + 1);
-
   const handleLightboxClose = () => setShowLightbox(false);
 
   return (
