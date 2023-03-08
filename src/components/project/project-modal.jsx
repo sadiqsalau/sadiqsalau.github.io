@@ -1,4 +1,7 @@
-import Lightbox from "react-spring-lightbox";
+import "yet-another-react-lightbox/styles.css";
+
+import Lightbox from "yet-another-react-lightbox";
+import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import clsx from "clsx";
 import { Dialog } from "@headlessui/react";
 import { FaGithub, FaTimes } from "react-icons/fa";
@@ -103,13 +106,19 @@ export const ProjectModal = ({ project, closeModal }) => {
       </ProjectModalContainer>
 
       <Lightbox
-        isOpen={showLightbox}
-        onClose={handleLightboxClose}
-        images={project.images}
-        onPrev={gotoPrevious}
-        onNext={gotoNext}
-        currentIndex={currentImageIndex}
-        className="bg-black bg-opacity-70"
+        open={showLightbox}
+        index={currentImageIndex}
+        close={handleLightboxClose}
+        slides={project.images}
+        plugins={[Zoom]}
+        animation={{
+          fade: 0,
+        }}
+        styles={{
+          container: {
+            background: "rgba(0,0,0,0.7)",
+          },
+        }}
       />
     </>
   );
