@@ -1,3 +1,10 @@
+/* Quicksand */
+@import "@fontsource/quicksand/400";
+@import "@fontsource/quicksand/700";
+
+/* Fredoka One */
+@import "@fontsource/fredoka-one/400";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
