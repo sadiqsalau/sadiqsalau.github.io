@@ -1,6 +1,8 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@fontsource/fredoka-one': ^4.5.9
+  '@fontsource/quicksand': ^4.5.12
   '@headlessui/react': ^1.7.13
   '@types/react': ^18.0.27
   '@types/react-dom': ^18.0.10
@@ -14,6 +16,8 @@ specifiers:
   vite: ^4.1.0
 
 dependencies:
+  '@fontsource/fredoka-one': 4.5.9
+  '@fontsource/quicksand': 4.5.12
   '@headlessui/react': 1.7.13_biqbaboplfbrettd7655fr4n2y
   clsx: 1.2.1
   react: 18.2.0
@@ -227,6 +231,14 @@ packages:
     requiresBuild: true
     dev: true
     optional: true
+
+  /@fontsource/fredoka-one/4.5.9:
+    resolution: {integrity: sha512-sI1feQZKdwb6P4kkGLAQ5o0zCYTXkEROhz8v6oXCej7sgrkcK8GfoO86mEzrzISIrDluZNnfmb2ICkh35Djw7Q==}
+    dev: false
+
+  /@fontsource/quicksand/4.5.12:
+    resolution: {integrity: sha512-aSgAR82dAzRsWGupPobU1ubfX6MhrQgKw2xe0AEKyQ5yMMpNhptTajbOIPJ8ZE5CPX3UHYlGY0da/7ztoEM3vQ==}
+    dev: false
 
   /@headlessui/react/1.7.13_biqbaboplfbrettd7655fr4n2y:
     resolution: {integrity: sha512-9n+EQKRtD9266xIHXdY5MfiXPDfYwl7zBM7KOx2Ae3Gdgxy8QML1FkCMjq6AsOf0l6N9uvI4HcFtuFlenaldKg==}
