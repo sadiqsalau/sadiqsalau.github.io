@@ -107,11 +107,6 @@ export const ProjectModal = ({ project, closeModal }) => {
         animation={{
           fade: 0,
         }}
-        styles={{
-          container: {
-            background: "rgba(0,0,0,0.7)",
-          },
-        }}
       />
     </>
   );
