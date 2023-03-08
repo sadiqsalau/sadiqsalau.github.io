@@ -1,5 +1,5 @@
-import MochiIcon from "@/assets/images/projects/mochi/logo.svg";
-import PluxScoreIcon from "@/assets/images/projects/pluxscore/icon@128.png";
+import MochiIcon from "@/assets/images/projects/mochi/icon.png";
+import PluxScoreIcon from "@/assets/images/projects/pluxscore/icon.png";
 import PluxScoreImage01 from "@/assets/images/projects/pluxscore/screenshots/01.png";
 import PluxScoreImage02 from "@/assets/images/projects/pluxscore/screenshots/02.png";
 import {
