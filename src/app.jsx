@@ -1,5 +1,1 @@
-function App() {
-  return null;
-}
-
-export default App;
+export const App = () => null;
