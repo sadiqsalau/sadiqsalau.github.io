@@ -11,20 +11,23 @@ import { useState } from "react";
 import { ProjectModalContainer } from "./project-modal-container";
 
 export const ProjectModal = ({ show, project, closeModal }) => {
-  const [currentImageIndex, setCurrentIndex] = useState(-1);
+  const [currentImageIndex, setCurrentImageIndex] = useState(-1);
 
   const handleImageClick = ({ index }) => {
-    setCurrentIndex(index);
+    setCurrentImageIndex(index);
   };
 
-  const handleLightboxClose = () => setCurrentIndex(-1);
+  const handleLightboxClose = () => setCurrentImageIndex(-1);
+
+  const handleModalClose = () => {
+    if (currentImageIndex < 0) {
+      closeModal();
+    }
+  };
 
   return (
     <>
-      <ProjectModalContainer
-        show={show && currentImageIndex < 0}
-        closeModal={closeModal}
-      >
+      <ProjectModalContainer show={show} closeModal={handleModalClose}>
         <div className="space-y-4">
           {/* Header */}
           <div className="flex gap-2">
