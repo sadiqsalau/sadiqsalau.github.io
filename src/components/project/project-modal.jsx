@@ -46,6 +46,11 @@ export const ProjectModal = ({ project, closeModal }) => {
                 {project.description}
               </Dialog.Description>
 
+              {/* Position */}
+              <div className="bg-stone-700 text-sm px-2 rounded-full self-start">
+                {project.position}
+              </div>
+
               <div className="flex gap-2 mt-2">
                 {/* Visit link */}
                 <a
