@@ -95,9 +95,11 @@ export const ProjectModal = ({ project, closeModal }) => {
               <FaTimes className="w-6 h-6" />
             </button>
           </div>
+
+          {/* Photos */}
           <PhotoAlbum
             photos={project.images}
-            layout="masonry"
+            layout="columns"
             onClick={handleImageClick}
           />
         </div>
