@@ -11,7 +11,8 @@ export const Project = ({ project }) => {
 
   return (
     <>
-      <div
+      <a
+        href="javascript:;"
         onClick={handleClick}
         className={clsx(
           "border border-green-500",
@@ -50,7 +51,7 @@ export const Project = ({ project }) => {
             </div>
           </div>
         </div>
-      </div>
+      </a>
 
       {/* Modal */}
       <ProjectModal
