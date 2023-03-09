@@ -112,6 +112,7 @@ export const ProjectModal = ({ show, project, closeModal }) => {
           <PhotoAlbum
             photos={project.images}
             layout="columns"
+            spacing={5}
             onClick={handleImageClick}
           />
         </div>
