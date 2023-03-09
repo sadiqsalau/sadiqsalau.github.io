@@ -12,7 +12,7 @@ export const Project = ({ project }) => {
   return (
     <>
       <a
-        href="javascript:;"
+        role="button"
         onClick={handleClick}
         className={clsx(
           "border border-green-500",
