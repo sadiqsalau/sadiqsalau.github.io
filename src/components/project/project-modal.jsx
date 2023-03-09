@@ -11,7 +11,7 @@ import { useState } from "react";
 import { ProjectModalContainer } from "./project-modal-container";
 import { ProjectTechnologies } from "./project-technologies";
 
-export const ProjectModal = ({ project, closeModal }) => {
+export const ProjectModal = ({ show, project, closeModal }) => {
   const [showLightbox, setShowLightbox] = useState(false);
 
   const [currentImageIndex, setCurrentIndex] = useState(0);
@@ -24,7 +24,10 @@ export const ProjectModal = ({ project, closeModal }) => {
 
   return (
     <>
-      <ProjectModalContainer show={!showLightbox} closeModal={closeModal}>
+      <ProjectModalContainer
+        show={show && !showLightbox}
+        closeModal={closeModal}
+      >
         <div className="space-y-4">
           {/* Header */}
           <div className="flex gap-2">

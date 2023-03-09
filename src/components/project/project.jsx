@@ -5,7 +5,7 @@ import { ProjectModal } from "./project-modal";
 import { ProjectTechnologies } from "./project-technologies";
 
 export const Project = ({ project }) => {
-  const [showModal, setShowModal] = useState();
+  const [showModal, setShowModal] = useState(false);
 
   const handleClick = () => setShowModal(true);
   const handleModalClose = () => setShowModal(false);
@@ -44,9 +44,13 @@ export const Project = ({ project }) => {
           </div>
         </div>
       </div>
-      {showModal ? (
-        <ProjectModal project={project} closeModal={handleModalClose} />
-      ) : null}
+
+      {/* Modal */}
+      <ProjectModal
+        show={showModal}
+        project={project}
+        closeModal={handleModalClose}
+      />
     </>
   );
 };
