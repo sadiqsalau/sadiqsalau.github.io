@@ -9,7 +9,6 @@ import { PhotoAlbum } from "react-photo-album";
 import { useState } from "react";
 
 import { ProjectModalContainer } from "./project-modal-container";
-import { ProjectTechnologies } from "./project-technologies";
 
 export const ProjectModal = ({ show, project, closeModal }) => {
   const [currentImageIndex, setCurrentIndex] = useState(-1);
@@ -41,7 +40,14 @@ export const ProjectModal = ({ show, project, closeModal }) => {
                 {project.title}
               </Dialog.Title>
 
-              <ProjectTechnologies project={project} />
+              {/* Technologies */}
+              <ul className="flex gap-2 flex-wrap">
+                {project.technologies.map((Icon, i) => (
+                  <li key={i}>
+                    <Icon className="text-stone-400" />
+                  </li>
+                ))}
+              </ul>
 
               <Dialog.Description className="text-sm">
                 {project.description}

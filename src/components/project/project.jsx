@@ -2,7 +2,6 @@ import clsx from "clsx";
 import { useState } from "react";
 
 import { ProjectModal } from "./project-modal";
-import { ProjectTechnologies } from "./project-technologies";
 
 export const Project = ({ project }) => {
   const [showModal, setShowModal] = useState(false);
@@ -34,7 +33,13 @@ export const Project = ({ project }) => {
             <h4 className="font-fredoka-one">{project.title}</h4>
 
             {/* Technologies */}
-            <ProjectTechnologies project={project} />
+            <ul className="flex gap-2 flex-wrap">
+              {project.technologies.map((Icon, i) => (
+                <li key={i}>
+                  <Icon className="text-stone-400" />
+                </li>
+              ))}
+            </ul>
 
             <p className="text-sm">{project.description}</p>
 
