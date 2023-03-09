@@ -1,12 +1,5 @@
 import MochiIcon from "@/assets/images/projects/mochi/icon.png";
-import MochiImage01 from "@/assets/images/projects/mochi/screenshots/01.png";
-import MochiImage02 from "@/assets/images/projects/mochi/screenshots/02.png";
-import MochiImage03 from "@/assets/images/projects/mochi/screenshots/03.png";
-import MochiImage04 from "@/assets/images/projects/mochi/screenshots/04.png";
-import MochiImage05 from "@/assets/images/projects/mochi/screenshots/05.png";
 import PluxScoreIcon from "@/assets/images/projects/pluxscore/icon.png";
-import PluxScoreImage01 from "@/assets/images/projects/pluxscore/screenshots/01.png";
-import PluxScoreImage02 from "@/assets/images/projects/pluxscore/screenshots/02.png";
 import {
   SiBootstrap,
   SiJavascript,
@@ -23,18 +16,14 @@ export const projectsList = [
     position: "Full-Stack Developer",
     technologies: [SiReact, SiBootstrap, SiLaravel],
     description: "Social media for sport fans",
-    images: [
-      {
-        src: PluxScoreImage01,
-        width: 319,
-        height: 567,
-      },
-      {
-        src: PluxScoreImage02,
-        width: 319,
-        height: 567,
-      },
-    ],
+    images: Object.values(
+      import.meta.glob("@/assets/images/projects/pluxscore/screenshots/*.png", {
+        eager: true,
+        query: {
+          metadata: "",
+        },
+      })
+    ),
   },
   {
     title: "Mochi",
@@ -44,32 +33,13 @@ export const projectsList = [
     position: "Open-Source",
     technologies: [SiReact, SiJavascript, SiTailwindcss],
     description: "ReactJs Chat Template",
-    images: [
-      {
-        src: MochiImage01,
-        width: 319,
-        height: 567,
-      },
-      {
-        src: MochiImage02,
-        width: 319,
-        height: 567,
-      },
-      {
-        src: MochiImage03,
-        width: 319,
-        height: 567,
-      },
-      {
-        src: MochiImage04,
-        width: 750,
-        height: 1334,
-      },
-      {
-        src: MochiImage05,
-        width: 1366,
-        height: 656,
-      },
-    ],
+    images: Object.values(
+      import.meta.glob("@/assets/images/projects/mochi/screenshots/*.png", {
+        eager: true,
+        query: {
+          metadata: "",
+        },
+      })
+    ),
   },
 ];
