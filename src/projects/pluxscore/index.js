@@ -6,7 +6,7 @@ export const project = {
   title: "PluxScore",
   link: "https://pluxscore.com",
   icon: Icon,
-  position: "Full-Stack Developer",
+  tags: ["Full-Stack Developer"],
   technologies: [SiReact, SiBootstrap, SiLaravel],
   description: "Social media for sport fans",
   images: Object.values(

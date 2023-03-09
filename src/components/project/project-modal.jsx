@@ -58,10 +58,17 @@ export const ProjectModal = ({ show, project, closeModal }) => {
                 {project.description}
               </Dialog.Description>
 
-              {/* Position */}
-              <div className="bg-stone-700 text-sm px-2 rounded-full self-start">
-                {project.position}
-              </div>
+              {/* Tags */}
+              <ul className="flex gap-1 flex-wrap">
+                {project.tags.map((tag, i) => (
+                  <li
+                    key={i}
+                    className="bg-stone-700 text-sm px-2 rounded-full self-start"
+                  >
+                    {tag}
+                  </li>
+                ))}
+              </ul>
 
               <div className="flex gap-2 mt-2">
                 {/* Visit link */}

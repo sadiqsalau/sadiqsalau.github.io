@@ -45,10 +45,17 @@ export const Project = ({ project }) => {
             {/* Description */}
             <p className="text-sm">{project.description}</p>
 
-            {/* Position */}
-            <div className="bg-stone-700 text-sm px-2 rounded-full self-start">
-              {project.position}
-            </div>
+            {/* Tags */}
+            <ul className="flex gap-1 flex-wrap">
+              {project.tags.map((tag, i) => (
+                <li
+                  key={i}
+                  className="bg-stone-700 text-sm px-2 rounded-full self-start"
+                >
+                  {tag}
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
       </a>
