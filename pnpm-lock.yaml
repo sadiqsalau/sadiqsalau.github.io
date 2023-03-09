@@ -18,6 +18,7 @@ specifiers:
   vite: ^4.1.0
   vite-imagetools: ^4.0.18
   vite-plugin-pwa: ^0.14.4
+  workbox-window: ^6.5.4
   yet-another-react-lightbox: ^2.6.0
 
 dependencies:
@@ -40,7 +41,8 @@ devDependencies:
   tailwindcss: 3.2.7_postcss@8.4.21
   vite: 4.1.4
   vite-imagetools: 4.0.18
-  vite-plugin-pwa: 0.14.4_vite@4.1.4
+  vite-plugin-pwa: 0.14.4_pchkumgzq6po4w4enhsumrku2u
+  workbox-window: 6.5.4
 
 packages:
 
@@ -3604,10 +3606,11 @@ packages:
       - rollup
     dev: true
 
-  /vite-plugin-pwa/0.14.4_vite@4.1.4:
+  /vite-plugin-pwa/0.14.4_pchkumgzq6po4w4enhsumrku2u:
     resolution: {integrity: sha512-M7Ct0so8OlouMkTWgXnl8W1xU95glITSKIe7qswZf1tniAstO2idElGCnsrTJ5NPNSx1XqfTCOUj8j94S6FD7Q==}
     peerDependencies:
       vite: ^3.1.0 || ^4.0.0
+      workbox-window: ^6.5.4
     dependencies:
       '@rollup/plugin-replace': 5.0.2_rollup@3.18.0
       debug: 4.3.4
