@@ -5,7 +5,7 @@ import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import clsx from "clsx";
 import { Dialog } from "@headlessui/react";
 import { FaGithub, FaTimes } from "react-icons/fa";
-import { Gallery } from "react-grid-gallery";
+import { PhotoAlbum } from "react-photo-album";
 import { useState } from "react";
 
 import { ProjectModalContainer } from "./project-modal-container";
@@ -90,9 +90,9 @@ export const ProjectModal = ({ project, closeModal }) => {
               <FaTimes className="w-6 h-6" />
             </button>
           </div>
-          <Gallery
-            enableImageSelection={false}
-            images={project.images}
+          <PhotoAlbum
+            photos={project.images}
+            layout="masonry"
             onClick={handleImageClick}
           />
         </div>
