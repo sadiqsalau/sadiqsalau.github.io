@@ -41,8 +41,10 @@ export const Project = ({ project }) => {
               ))}
             </ul>
 
+            {/* Description */}
             <p className="text-sm">{project.description}</p>
 
+            {/* Position */}
             <div className="bg-stone-700 text-sm px-2 rounded-full self-start">
               {project.position}
             </div>

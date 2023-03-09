@@ -28,6 +28,7 @@ export const ProjectModal = ({ show, project, closeModal }) => {
         <div className="space-y-4">
           {/* Header */}
           <div className="flex gap-2">
+            {/* Icon */}
             <img
               src={project.icon}
               alt={project.title}
@@ -49,6 +50,7 @@ export const ProjectModal = ({ show, project, closeModal }) => {
                 ))}
               </ul>
 
+              {/* Description */}
               <Dialog.Description className="text-sm">
                 {project.description}
               </Dialog.Description>
