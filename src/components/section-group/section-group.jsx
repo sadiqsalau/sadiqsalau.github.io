@@ -1,3 +1,7 @@
+import clsx from "clsx";
+
 export const SectionGroup = (props) => (
-  <div className="flex flex-col gap-5">{props.children}</div>
+  <div className={clsx(props.className, "flex flex-col gap-5")}>
+    {props.children}
+  </div>
 );
