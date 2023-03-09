@@ -12,20 +12,18 @@ import { ProjectModalContainer } from "./project-modal-container";
 import { ProjectTechnologies } from "./project-technologies";
 
 export const ProjectModal = ({ show, project, closeModal }) => {
-  const [showLightbox, setShowLightbox] = useState(false);
+  const [currentImageIndex, setCurrentIndex] = useState(-1);
 
-  const [currentImageIndex, setCurrentIndex] = useState(0);
-  const handleImageClick = (i) => {
-    setCurrentIndex(i);
-    setShowLightbox(true);
+  const handleImageClick = ({ index }) => {
+    setCurrentIndex(index);
   };
 
-  const handleLightboxClose = () => setShowLightbox(false);
+  const handleLightboxClose = () => setCurrentIndex(-1);
 
   return (
     <>
       <ProjectModalContainer
-        show={show && !showLightbox}
+        show={show && currentImageIndex < 0}
         closeModal={closeModal}
       >
         <div className="space-y-4">
@@ -109,7 +107,7 @@ export const ProjectModal = ({ show, project, closeModal }) => {
       </ProjectModalContainer>
 
       <Lightbox
-        open={showLightbox}
+        open={currentImageIndex >= 0}
         index={currentImageIndex}
         close={handleLightboxClose}
         slides={project.images}
