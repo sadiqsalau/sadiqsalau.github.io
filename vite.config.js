@@ -13,12 +13,11 @@ export default defineConfig({
   },
   plugins: [
     VitePWA({
-      registerType: "autoUpdate",
       scope: "./",
       includeAssets: ["favicon.ico", "apple-touch-icon.png"],
       workbox: {
         globPatterns: ["**/[!_]*"],
-        navigateFallbackAllowlist: [],
+        navigateFallbackAllowlist: [/^\/$/],
       },
       manifest: {
         name: "Sadiq Salau",
