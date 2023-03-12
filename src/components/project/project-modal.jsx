@@ -1,5 +1,6 @@
 import "yet-another-react-lightbox/styles.css";
 
+import Image from "react-graceful-image";
 import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import clsx from "clsx";
@@ -129,6 +130,9 @@ export const ProjectModal = ({ show, project, closeModal }) => {
               layout="columns"
               spacing={5}
               onClick={handleImageClick}
+              renderPhoto={({ imageProps }) => (
+                <Image {...imageProps} placeholderColor="#292524" />
+              )}
             />
           ) : null}
         </div>
