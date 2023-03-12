@@ -52,9 +52,9 @@ export const PWAPrompt = () => {
           />
 
           {/* Toast content */}
-          <div className="grow">
-            <h4 className="font-fredoka-one">Sadiq Salau</h4>
-            <p>
+          <div className="grow space-y-1">
+            <h4 className="font-fredoka-one leading-none">Sadiq Salau</h4>
+            <p className="text-[.9375rem]">
               {offlineReady ? (
                 <>Page ready to work offline 🚀</>
               ) : (
