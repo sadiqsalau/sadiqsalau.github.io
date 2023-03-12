@@ -1,7 +1,11 @@
 import react from "@vitejs/plugin-react-swc";
+
 import { VitePWA } from "vite-plugin-pwa";
+
 import { defineConfig } from "vite";
+
 import { imagetools } from "vite-imagetools";
+
 import { resolve } from "path";
 
 // https://vitejs.dev/config/
@@ -17,6 +21,7 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "apple-touch-icon.png"],
       workbox: {
         globPatterns: ["**/[!_]*"],
+        globIgnores: ["**/screenshot-*.*"],
         navigateFallbackAllowlist: [/^\/$/],
       },
       manifest: {
