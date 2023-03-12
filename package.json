@@ -15,6 +15,7 @@
     "clsx": "^1.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-graceful-image": "^1.5.0",
     "react-icons": "^4.8.0",
     "react-photo-album": "^2.0.3",
     "yet-another-react-lightbox": "^2.6.0"
