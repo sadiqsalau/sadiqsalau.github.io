@@ -1,11 +1,11 @@
 import { SiBootstrap, SiLaravel, SiReact } from "react-icons/si";
 
-import Icon from "./icon.png";
+import icon from "./icon.png";
 
 export const project = {
+  icon,
   title: "PluxScore",
   link: "https://pluxscore.com",
-  icon: Icon,
   tags: ["Full-Stack Developer"],
   technologies: [SiReact, SiBootstrap, SiLaravel],
   description: "Social media for sport fans",
