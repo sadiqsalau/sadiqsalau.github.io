@@ -115,13 +115,22 @@ export const ProjectModal = ({ show, project, closeModal }) => {
             </button>
           </div>
 
+          {/* Full Description */}
+          {project.fullDescription ? (
+            <p className={clsx("p-4 rounded-lg", "bg-stone-800")}>
+              {project.fullDescription}
+            </p>
+          ) : null}
+
           {/* Photos */}
-          <PhotoAlbum
-            photos={project.images}
-            layout="columns"
-            spacing={5}
-            onClick={handleImageClick}
-          />
+          {project.images?.length ? (
+            <PhotoAlbum
+              photos={project.images}
+              layout="columns"
+              spacing={5}
+              onClick={handleImageClick}
+            />
+          ) : null}
         </div>
       </ProjectModalContainer>
 
