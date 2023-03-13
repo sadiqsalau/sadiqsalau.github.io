@@ -141,7 +141,7 @@ export const ProjectModal = ({ show, project, closeModal }) => {
                       customPlaceholder={(ref) => (
                         <div
                           ref={ref}
-                          className="bg-stone-800 w-full h-full"
+                          className="bg-stone-800 w-full h-full animate-pulse"
                         ></div>
                       )}
                     />
