@@ -129,15 +129,14 @@ export const ProjectModal = ({ show, project, closeModal }) => {
               photos={project.images}
               layout="columns"
               spacing={5}
+              padding={0}
               onClick={handleImageClick}
-              renderPhoto={({
-                wrapperStyle,
-                imageProps: { onClick, ...props },
-              }) => {
+              renderPhoto={({ wrapperStyle, imageProps: { onClick, src } }) => {
                 return (
                   <div style={wrapperStyle} onClick={onClick}>
                     <GracefulImage
-                      {...props}
+                      src={src}
+                      className="w-full h-full"
                       customPlaceholder={(ref) => (
                         <div
                           ref={ref}
