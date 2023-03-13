@@ -15,7 +15,7 @@ export const Contact = () => (
         "shadow-[5px_5px_0px_-2px] shadow-green-700"
       )}
     >
-      <p className="px-2">
+      <p className="p-2.5 bg-stone-800 rounded-lg">
         Feel free to reach out to me via any of the platforms below
       </p>
 
