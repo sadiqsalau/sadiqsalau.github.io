@@ -136,7 +136,15 @@ export const ProjectModal = ({ show, project, closeModal }) => {
               }) => {
                 return (
                   <div style={wrapperStyle} onClick={onClick}>
-                    <GracefulImage {...props} placeholderColor="#292524" />
+                    <GracefulImage
+                      {...props}
+                      customPlaceholder={(ref) => (
+                        <div
+                          ref={ref}
+                          className="bg-stone-800 w-full h-full"
+                        ></div>
+                      )}
+                    />
                   </div>
                 );
               }}
