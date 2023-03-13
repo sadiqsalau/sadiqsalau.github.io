@@ -1,6 +1,6 @@
 import { SiBootstrap, SiLaravel, SiReact } from "react-icons/si";
 
-import icon from "./icon.png";
+import icon from "./icon.png?w=80&h=80";
 
 export const project = {
   icon,
