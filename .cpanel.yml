@@ -36,9 +36,10 @@ deployment:
     # Copy new files
     - |
       find -mindepth 1 \
-          ! -path "*/.git*" \
+          ! -name ".git" \
           ! -name ".cpanel.yml" \
           ! -name ".deploy.conf" \
           ! -name ".deploy.example.conf" \
-          -exec echo "Copying {}" >> "$DEPLOY_LOG" && cp -RTpu "{}" "$DEPLOY_PATH/{}" \;\
+          -exec echo "Copying {}" >> "$DEPLOY_LOG" \;\
+          -exec cp -RTpu "{}" "$DEPLOY_PATH/{}" \;\
           -fprint0 "$DEPLOY_LIST"
