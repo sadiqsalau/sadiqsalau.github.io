@@ -36,7 +36,7 @@ deployment:
     # Copy new files
     - |
       find -mindepth 1 \
-          ! -name ".git" \
+          ! -path "*/.git*" \
           ! -name ".cpanel.yml" \
           ! -name ".deploy.conf" \
           ! -name ".deploy.example.conf" \
