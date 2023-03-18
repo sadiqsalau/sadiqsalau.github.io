@@ -15,8 +15,7 @@ deployment:
     - export DEPLOY_LIST="$DEPLOY_PATH/.deployed-files.txt"
 
     # Create paths
-    - |
-      [ ! -d "$DEPLOY_PATH" ] && mkdir -p "$DEPLOY_PATH"
+    - if [ ! -d "$DEPLOY_PATH" ]; then mkdir -p "$DEPLOY_PATH"; fi
 
     # Start deployment
     - echo "=== Deployment started" > "$DEPLOY_LOG"
