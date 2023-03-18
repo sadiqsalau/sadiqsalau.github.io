@@ -15,19 +15,21 @@ deployment:
     - export DEPLOY_LIST="$DEPLOY_PATH/.deployed-files.txt"
 
     # Create paths
-    - mkdir -p $DEPLOY_PATH
+    - |
+      [ ! -d "$DEPLOY_PATH" ] && mkdir -p "$DEPLOY_PATH"
 
     # Start deployment
-    - echo "Deployment started" > "$DEPLOY_LOG"
+    - echo "=== Deployment started" > "$DEPLOY_LOG"
 
     # Remove old files
     - |
+      echo "=== Removing old files" >> "$DEPLOY_LOG"
       if [ -f "$DEPLOY_LIST" ]
       then
         while IFS= read -r -d $'\0' file; do
           if [ ! -d "$DEPLOY_PATH/$file" ]
           then
-            echo "Removing file: $file" >> "$DEPLOY_LOG"
+            echo "$file" >> "$DEPLOY_LOG"
             rm -rf "$DEPLOY_PATH/$file"
           fi
         done < "$DEPLOY_LIST"
@@ -35,11 +37,12 @@ deployment:
 
     # Copy new files
     - |
+      echo "=== Copying new files" >> "$DEPLOY_LOG"
       find -mindepth 1 \
           ! -path "*/.git*" \
           ! -name ".cpanel.yml" \
           ! -name ".deploy.conf" \
           ! -name ".deploy.example.conf" \
-          -exec echo "Copying {}" >> "$DEPLOY_LOG" \;\
+          -exec echo "{}" >> "$DEPLOY_LOG" \;\
           -exec cp -RTpu "{}" "$DEPLOY_PATH/{}" \;\
           -fprint0 "$DEPLOY_LIST"
