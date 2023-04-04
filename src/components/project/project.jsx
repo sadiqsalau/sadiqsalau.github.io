@@ -18,7 +18,7 @@ export const Project = ({ project }) => {
           "border border-green-500",
           "rounded-lg p-2.5",
           "flex flex-col gap-2",
-          "shadow-[5px_5px_0px_-2px_theme(colors.green.700)]",
+          "shadow-[2px_2px_0px_0px_theme(colors.green.700)]",
           "hover:bg-stone-800"
         )}
       >
