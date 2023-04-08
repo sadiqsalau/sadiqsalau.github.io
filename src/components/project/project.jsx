@@ -29,7 +29,7 @@ export const Project = ({ project }) => {
             className="w-10 h-10 rounded-lg flex-none"
           />
           {/* Details */}
-          <div className="flex-1 flex flex-col gap-1">
+          <div className="flex-1 flex flex-col gap-1.5">
             <h4 className="font-fredoka-one">{project.title}</h4>
 
             {/* Technologies */}
