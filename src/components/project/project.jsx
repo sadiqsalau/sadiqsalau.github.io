@@ -17,11 +17,11 @@ export const Project = ({ project }) => {
         className={clsx(
           "bg-stone-800",
           "border border-transparent hover:border-green-500",
-          "rounded-lg p-2.5",
+          "rounded-lg p-4",
           "flex flex-col gap-2"
         )}
       >
-        <div className="flex gap-2">
+        <div className="flex gap-2.5">
           {/* Icon */}
           <img
             src={project.icon}
