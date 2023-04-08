@@ -7,7 +7,7 @@ export const project = {
   title: "Mochi",
   link: "https://sadiqsalau.github.io/mochi",
   repo: "https://github.com/sadiqsalau/mochi",
-  tags: ["Open-Source"],
+  tags: ["Template"],
   technologies: [SiReact, SiJavascript, SiTailwindcss],
   description: "ReactJs Chat Template",
   images: Object.values(
