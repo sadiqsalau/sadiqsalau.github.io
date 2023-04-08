@@ -42,14 +42,14 @@ export const Project = ({ project }) => {
             </ul>
 
             {/* Description */}
-            <p className="text-sm">{project.description}</p>
+            <p className="text-sm text-stone-300">{project.description}</p>
 
             {/* Tags */}
             <ul className="flex gap-1 flex-wrap">
               {project.tags.map((tag, i) => (
                 <li
                   key={i}
-                  className="bg-stone-700 text-sm px-2 rounded-full self-start"
+                  className="bg-stone-700 text-sm px-2 rounded-full self-start text-stone-300"
                 >
                   {tag}
                 </li>
