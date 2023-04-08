@@ -47,7 +47,7 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
         ))}
       </ul>
 
-      <div className="flex gap-2 mt-2">
+      <div className="flex flex-wrap gap-2 mt-2">
         {/* Visit link */}
         <a
           target="_blank"
