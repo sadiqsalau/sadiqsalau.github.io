@@ -17,4 +17,6 @@ export const project = {
       },
     })
   ),
+  fullDescription:
+    "As a ReactJS + Laravel developer at Pluxscore, I was responsible for developing and maintaining web applications using these technologies. This include creating interactive user interfaces, integrating with backend APIs and databases, and implementing security features to protect user data.",
 };
