@@ -15,11 +15,10 @@ export const Project = ({ project }) => {
         role="button"
         onClick={handleClick}
         className={clsx(
-          "border border-green-500",
+          "bg-stone-800",
+          "border border-transparent hover:border-green-500",
           "rounded-lg p-2.5",
-          "flex flex-col gap-2",
-          "shadow-[2px_2px_0px_0px_theme(colors.green.700)]",
-          "hover:bg-stone-800"
+          "flex flex-col gap-2"
         )}
       >
         <div className="flex gap-2">
