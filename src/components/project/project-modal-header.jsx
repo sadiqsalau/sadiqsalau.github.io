@@ -16,7 +16,7 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
     />
 
     {/* Details */}
-    <div className="flex-1 flex flex-col gap-1">
+    <div className="flex-1 flex flex-col gap-1.5">
       <Dialog.Title as="h3" className="text-lg font-fredoka-one">
         {project.title}
       </Dialog.Title>
