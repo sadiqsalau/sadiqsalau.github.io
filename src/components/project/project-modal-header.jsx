@@ -2,7 +2,9 @@ import "yet-another-react-lightbox/styles.css";
 
 import clsx from "clsx";
 import { Dialog } from "@headlessui/react";
-import { FaGithub, FaTimes } from "react-icons/fa";
+import { FaTimes } from "react-icons/fa";
+import { SiGit } from "react-icons/si";
+import { BsBoxArrowInUpRight } from "react-icons/bs";
 
 export const ProjectModalHeader = ({ project, closeModal }) => (
   <div className="flex gap-2">
@@ -51,6 +53,7 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
           target="_blank"
           href={project.link}
           className={clsx(
+            "flex gap-2",
             "rounded-lg bg-green-500 text-green-900",
             "font-bold px-4 py-1 outline-0 rounded-lg",
             "hover:ring hover:ring-green-700",
@@ -58,7 +61,7 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
             "border border-green-500"
           )}
         >
-          Visit Page
+          <BsBoxArrowInUpRight className="w-6 h-6" /> Visit Page
         </a>
 
         {/* Repo */}
@@ -67,13 +70,14 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
             target="_blank"
             href={project.repo}
             className={clsx(
+              "flex gap-2",
+              "bg-[#f34f29]",
               "font-bold px-4 py-1 outline-0 rounded-lg",
-              "hover:ring hover:ring-green-700",
-              "focus:ring focus:ring-green-700",
-              "border border-green-500"
+              "hover:ring hover:ring-[#c23f21]",
+              "focus:ring focus:ring-[#c23f21]"
             )}
           >
-            <FaGithub className="w-6 h-6" />
+            <SiGit className="w-6 h-6" /> Repository
           </a>
         ) : null}
       </div>
