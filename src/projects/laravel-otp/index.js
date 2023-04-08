@@ -7,7 +7,7 @@ export const project = {
   title: "sadiqsalau/laravel-otp",
   link: "https://packagist.org/packages/sadiqsalau/laravel-otp",
   repo: "https://github.com/sadiqsalau/laravel-otp",
-  tags: ["Open-Source", "Package"],
+  tags: ["Package"],
   technologies: [SiComposer, SiLaravel, SiPhp],
   description: "OTP Package for Laravel",
   fullDescription:

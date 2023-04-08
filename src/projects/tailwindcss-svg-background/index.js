@@ -7,7 +7,7 @@ export const project = {
   title: "tailwindcss-svg-background",
   link: "https://www.npmjs.com/package/tailwindcss-svg-background",
   repo: "https://github.com/sadiqsalau/tailwindcss-svg-background",
-  tags: ["Open-Source", "Package"],
+  tags: ["Package"],
   technologies: [SiJavascript, SiTailwindcss],
   description: "SVG Background Image Plugin",
   fullDescription:
