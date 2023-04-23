@@ -1,3 +1,4 @@
+---
 deployment:
   tasks:
     # If .deploy.conf doesn't exist, create it from .deploy.example.conf
@@ -26,16 +27,10 @@ deployment:
       if [ -f "$DEPLOY_LIST" ]
       then
         while IFS= read -r -d $'\0' file; do
-          # If it's a directory and it's empty, remove it
-          if [ -d "$DEPLOY_PATH/$file" ] && [ ! "$(ls -A "$DEPLOY_PATH/$file")" ]
+          if [ ! -d "$DEPLOY_PATH/$file" ] || [ ! "$(ls -A "$DEPLOY_PATH/$file")" ]
           then
-            echo "Removing empty directory: $file" >> "$DEPLOY_LOG"
-            rmdir "$DEPLOY_PATH/$file"
-          # If it's a file, remove it
-          elif [ -f "$DEPLOY_PATH/$file" ]
-          then
-            echo "Removing file: $file" >> "$DEPLOY_LOG"
-            rm "$DEPLOY_PATH/$file"
+            echo "$file" >> "$DEPLOY_LOG"
+            rm -rf "$DEPLOY_PATH/$file"
           fi
         done < "$DEPLOY_LIST"
       fi
@@ -43,15 +38,11 @@ deployment:
     # Copy new files
     - |
       echo "=== Copying new files" >> "$DEPLOY_LOG"
-      # Find files to copy, excluding certain paths and files
       find -depth -mindepth 1 \
           ! -path "*/.git*" \
           ! -name ".cpanel.yml" \
           ! -name ".deploy.conf" \
           ! -name ".deploy.example.conf" \
-          # Print each file to the deploy log as it's copied
           -exec echo "{}" >> "$DEPLOY_LOG" \;\
-          # Copy the file with permissions and timestamp preservation
           -exec cp -RTpu "{}" "$DEPLOY_PATH/{}" \;\
-          # Write each copied file to the deployed files list
           -fprint0 "$DEPLOY_LIST"
