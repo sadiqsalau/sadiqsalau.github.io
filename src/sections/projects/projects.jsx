@@ -1,11 +1,11 @@
 import clsx from "clsx";
+import { Fragment } from "react";
+import { Project } from "@/components/project/project";
+import { ProjectPlaceholder } from "@/components/project/project-placeholder";
 import { SectionHeading } from "@/components/section-heading/section-heading";
+import { repeatComponent } from "repeat-component";
 
 import { useProjectsQuery } from "./use-projects-query";
-import { Project } from "@/components/project/project";
-import { Fragment } from "react";
-import { ProjectPlaceholder } from "@/components/project/project-placeholder";
-import { repeatComponent } from "repeat-component";
 
 export const Projects = () => {
   const { data, isLoading, isFetchingNextPage, hasNextPage, fetchNextPage } =
@@ -14,7 +14,10 @@ export const Projects = () => {
   return (
     <div className="flex flex-col gap-2">
       <SectionHeading>Projects</SectionHeading>
-
+      <p className="p-4 rounded-lg bg-stone-800">
+        As a React and Laravel web developer, I have completed several projects
+        that showcase my expertise in these technologies.
+      </p>
       <div
         className={clsx(
           "grid gap-3",
