@@ -25,7 +25,7 @@ deployment:
       echo "=== Removing old files" >> "$DEPLOY_LOG"
       if [ -f "$DEPLOY_LIST" ]
       then
-        tac "$DEPLOY_LIST" | while IFS= read -r -d $'\0' file; do
+        tac -s $'\0' "$DEPLOY_LIST" | while IFS= read -r -d '' file; do
           if [ -d "$DEPLOY_PATH/$file" ] && [ ! "$(ls -A "$DEPLOY_PATH/$file")" ]
           then
             echo "Removing empty directory: $file" >> "$DEPLOY_LOG"
