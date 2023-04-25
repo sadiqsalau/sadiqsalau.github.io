@@ -10,7 +10,6 @@ deployment:
       else
           source .deploy.conf
       fi
-
     # Set variables
     - export DEPLOY_LOG="$DEPLOY_PATH/.deploy.log"
     - export DEPLOY_LIST="$DEPLOY_PATH/.deployed-files.txt"
@@ -26,7 +25,7 @@ deployment:
       echo "=== Removing old files" >> "$DEPLOY_LOG"
       if [ -f "$DEPLOY_LIST" ]
       then
-        while IFS= read -r -d $'\0' file; do
+        tac "$DEPLOY_LIST" | while IFS= read -r -d $'\0' file; do
           if [ -d "$DEPLOY_PATH/$file" ] && [ ! "$(ls -A "$DEPLOY_PATH/$file")" ]
           then
             echo "Removing empty directory: $file" >> "$DEPLOY_LOG"
@@ -36,13 +35,12 @@ deployment:
             echo "Removing file: $file" >> "$DEPLOY_LOG"
             rm "$DEPLOY_PATH/$file"
           fi
-        done < "$DEPLOY_LIST"
+        done
       fi
-
     # Copy new files
     - |
       echo "=== Copying new files" >> "$DEPLOY_LOG"
-      find -depth -mindepth 1 \
+      find -mindepth 1 \
           ! -path "*/.git*" \
           ! -name ".cpanel.yml" \
           ! -name ".deploy.conf" \
