@@ -18,4 +18,6 @@ export const project = {
       },
     })
   ),
+  fullDescription:
+    "Mochi is a Chat Application Template I created using the UI Design from Shalini Dey (credits)",
 };
