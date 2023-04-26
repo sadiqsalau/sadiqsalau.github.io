@@ -17,7 +17,7 @@ export default defineConfig({
       includeAssets: ["favicon.ico", "apple-touch-icon.png"],
       workbox: {
         globPatterns: ["**/[!_]*"],
-        globIgnores: ["**/project-*.*", "**/screenshot-*.*", "**/*.pdf"],
+        globIgnores: ["**/screenshot-*.*", "**/*.pdf"],
         navigateFallbackAllowlist: [/^\/$/],
       },
       manifest: {
