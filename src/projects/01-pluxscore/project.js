@@ -5,7 +5,7 @@ import icon from "./project-icon.png?w=80&h=80";
 export const project = {
   icon,
   title: "PluxScore",
-  link: "https://pluxscore.com",
+  link: "https://beta.pluxscore.com",
   tags: ["Developer"],
   technologies: [SiReact, SiBootstrap, SiLaravel],
   description: "Social media for sport fans",
