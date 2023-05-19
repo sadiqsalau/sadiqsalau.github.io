@@ -35,7 +35,7 @@ export const PWAPrompt = () => {
     >
       <div
         className={clsx(
-          "fixed bottom-0 w-full max-w-md left-1/2 -translate-x-1/2 p-4"
+          "fixed top-0 w-full max-w-md left-1/2 -translate-x-1/2 p-4"
         )}
       >
         <div
