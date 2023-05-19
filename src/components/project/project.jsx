@@ -95,12 +95,19 @@ export const Project = ({ project }) => {
                     <div
                       className={clsx(
                         "absolute inset-0 ",
-                        "text-2xl text-green-500 font-fredoka-one",
-                        "bg-neutral-800/50",
+                        "bg-neutral-800/30",
                         "flex justify-center items-center"
                       )}
                     >
-                      +{project.images.length - MAX_IMAGES_PREVIEW}
+                      <span
+                        className={clsx(
+                          "w-10 h-10 flex justify-center items-center",
+                          "bg-green-500 text-green-800 rounded-full",
+                          "font-fredoka-one text-lg"
+                        )}
+                      >
+                        +{project.images.length - MAX_IMAGES_PREVIEW}
+                      </span>
                     </div>
                   ) : null}
                 </div>
