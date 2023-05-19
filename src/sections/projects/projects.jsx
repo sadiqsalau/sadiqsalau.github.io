@@ -1,4 +1,4 @@
-import clsx from "clsx";
+import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
 import { Project } from "@/components/project/project";
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
@@ -11,15 +11,13 @@ export const Projects = () => (
       As a React and Laravel web developer, I have completed several projects
       that showcase my expertise in these technologies.
     </p>
-    <div
-      className={clsx(
-        "grid gap-3",
-        "grid-cols-[repeat(auto-fill,minmax(theme(spacing.60),1fr))]"
-      )}
-    >
-      {projectsList.map((project, i) => (
-        <Project key={i} project={project} />
-      ))}
-    </div>
+
+    <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 900: 2 }}>
+      <Masonry gutter="0.5rem">
+        {projectsList.map((project, i) => (
+          <Project key={i} project={project} />
+        ))}
+      </Masonry>
+    </ResponsiveMasonry>
   </div>
 );
