@@ -77,7 +77,7 @@ export const Project = ({ project }) => {
               return (
                 <div
                   style={wrapperStyle}
-                  className="relative overflow-hidden rounded-lg"
+                  className="relative overflow-hidden rounded-md"
                 >
                   <ProgressiveImage src={src}>
                     {(src, loading) => {
@@ -95,8 +95,8 @@ export const Project = ({ project }) => {
                     <div
                       className={clsx(
                         "absolute inset-0 ",
-                        "text-2xl text-green-600 font-fredoka-one",
-                        "bg-neutral-900 bg-opacity-70",
+                        "text-2xl text-green-500 font-fredoka-one",
+                        "bg-neutral-800/50",
                         "flex justify-center items-center"
                       )}
                     >
