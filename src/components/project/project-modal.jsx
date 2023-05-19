@@ -1,7 +1,7 @@
 import "yet-another-react-lightbox/styles.css";
 
-import GracefulImage from "react-graceful-image";
 import Lightbox from "yet-another-react-lightbox";
+import ProgressiveImage from "react-progressive-graceful-image";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import clsx from "clsx";
 import { PhotoAlbum } from "react-photo-album";
@@ -49,17 +49,20 @@ export const ProjectModal = ({ show, project, closeModal }) => {
               onClick={handleImageClick}
               renderPhoto={({ wrapperStyle, imageProps: { onClick, src } }) => {
                 return (
-                  <div style={wrapperStyle} onClick={onClick}>
-                    <GracefulImage
-                      src={src}
-                      className="w-full h-full"
-                      customPlaceholder={(ref) => (
-                        <div
-                          ref={ref}
-                          className="bg-stone-800 w-full h-full animate-pulse"
-                        ></div>
-                      )}
-                    />
+                  <div
+                    style={wrapperStyle}
+                    onClick={onClick}
+                    className="overflow-hidden rounded-md"
+                  >
+                    <ProgressiveImage src={src}>
+                      {(src, loading) => {
+                        return loading ? (
+                          <div className="w-full h-full bg-stone-800 animate-pulse"></div>
+                        ) : (
+                          <img src={src} className="w-full h-full" />
+                        );
+                      }}
+                    </ProgressiveImage>
                   </div>
                 );
               }}
