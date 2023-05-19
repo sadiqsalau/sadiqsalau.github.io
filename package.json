@@ -13,6 +13,7 @@
     "@fontsource/quicksand": "^4.5.12",
     "@headlessui/react": "^1.7.14",
     "clsx": "^1.2.1",
+    "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-graceful-image": "^1.5.0",
