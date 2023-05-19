@@ -1,6 +1,9 @@
+import ProgressiveImage from "react-progressive-graceful-image";
 import clsx from "clsx";
+import { PhotoAlbum } from "react-photo-album";
 import { useState } from "react";
 
+import { MAX_IMAGES_COLUMN, MAX_IMAGES_PREVIEW } from "./project-constants";
 import { ProjectModal } from "./project-modal";
 
 export const Project = ({ project }) => {
@@ -57,6 +60,54 @@ export const Project = ({ project }) => {
             </ul>
           </div>
         </div>
+
+        {/* Photos */}
+        {project.images?.length ? (
+          <PhotoAlbum
+            photos={project.images.slice(0, MAX_IMAGES_PREVIEW)}
+            layout="columns"
+            spacing={5}
+            padding={0}
+            columns={Math.min(MAX_IMAGES_COLUMN, project.images.length)}
+            renderPhoto={({
+              wrapperStyle,
+              layout: { index },
+              imageProps: { src },
+            }) => {
+              return (
+                <div
+                  style={wrapperStyle}
+                  className="relative overflow-hidden rounded-lg"
+                >
+                  <ProgressiveImage src={src}>
+                    {(src, loading) => {
+                      return loading ? (
+                        <div className="w-full h-full bg-stone-700/50 animate-pulse"></div>
+                      ) : (
+                        <img src={src} className="w-full h-full" />
+                      );
+                    }}
+                  </ProgressiveImage>
+
+                  {/* Count */}
+                  {project.images.length > MAX_IMAGES_PREVIEW &&
+                  index === MAX_IMAGES_PREVIEW - 1 ? (
+                    <div
+                      className={clsx(
+                        "absolute inset-0 ",
+                        "text-2xl text-green-600 font-fredoka-one",
+                        "bg-neutral-900 bg-opacity-70",
+                        "flex justify-center items-center"
+                      )}
+                    >
+                      +{project.images.length - MAX_IMAGES_PREVIEW}
+                    </div>
+                  ) : null}
+                </div>
+              );
+            }}
+          />
+        ) : null}
       </a>
 
       {/* Modal */}
