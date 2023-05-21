@@ -1,4 +1,4 @@
-import { SiBootstrap, SiLaravel, SiReact } from "react-icons/si";
+import { SiLaravel, SiReact, SiTailwindcss } from "react-icons/si";
 
 import icon from "./project-icon.png?w=80&h=80";
 
@@ -7,7 +7,7 @@ export const project = {
   title: "PluxScore",
   link: "https://beta.pluxscore.com",
   tags: ["Developer"],
-  technologies: [SiReact, SiBootstrap, SiLaravel],
+  technologies: [SiReact, SiTailwindcss, SiLaravel],
   description: "Social media for sport fans",
   images: Object.values(
     import.meta.glob("./screenshots/*.png", {
