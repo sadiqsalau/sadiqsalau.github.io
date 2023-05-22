@@ -14,8 +14,8 @@ export const Projects = () => (
 
     <Masonry
       autoArrange
-      breakpoints={{ mobile: 0, tablet: 992, desktop: 1600 }}
-      columns={{ mobile: 1, tablet: 2, desktop: 3 }}
+      breakpoints={{ mobile: 0, tablet: 992 }}
+      columns={{ mobile: 1, tablet: 2 }}
       gap="0.5rem"
     >
       {projectsList.map((project, i) => (
