@@ -1,4 +1,4 @@
-import Masonry, { ResponsiveMasonry } from "react-responsive-masonry";
+import Masonry from "react-smart-masonry";
 import { Project } from "@/components/project/project";
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
@@ -12,12 +12,15 @@ export const Projects = () => (
       that showcase my expertise in these technologies.
     </p>
 
-    <ResponsiveMasonry columnsCountBreakPoints={{ 350: 1, 900: 2 }}>
-      <Masonry gutter="0.5rem">
-        {projectsList.map((project, i) => (
-          <Project key={i} project={project} />
-        ))}
-      </Masonry>
-    </ResponsiveMasonry>
+    <Masonry
+      autoArrange
+      breakpoints={{ mobile: 0, tablet: 992, desktop: 1600 }}
+      columns={{ mobile: 1, tablet: 2, desktop: 3 }}
+      gap="0.5rem"
+    >
+      {projectsList.map((project, i) => (
+        <Project key={i} project={project} />
+      ))}
+    </Masonry>
   </div>
 );
