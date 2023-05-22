@@ -31,15 +31,9 @@ dependencies:
   react-progressive-graceful-image:
     specifier: ^0.7.0
     version: 0.7.0(react-dom@18.2.0)(react@18.2.0)
-  react-responsive-masonry:
-    specifier: ^2.1.7
-    version: 2.1.7
   react-smart-masonry:
     specifier: ^2.0.2
     version: 2.0.2(react-dom@18.2.0)(react@18.2.0)
-  repeat-component:
-    specifier: ^1.0.1
-    version: 1.0.1(react@18.2.0)
   yet-another-react-lightbox:
     specifier: ^3.5.2
     version: 3.5.2(react-dom@18.2.0)(react@18.2.0)
@@ -2637,10 +2631,6 @@ packages:
     engines: {node: '>=0.10.0'}
     dev: true
 
-  /is-function@1.0.2:
-    resolution: {integrity: sha512-lw7DUp0aWXYg+CBCN+JKkcE0Q2RayZnSvnZBlwgxHBQhqt5pZNVy4Ri7H9GmmXkdu7LUthszM+Tor1u/2iBcpQ==}
-    dev: false
-
   /is-glob@4.0.3:
     resolution: {integrity: sha512-xelSayHH36ZgE7ZWhli7pW34hNbNl8Ojv5KVmkJD4hBdD3th8Tfk9vYasLM+mXWOZhFkgZfxhLSnrwRr4elSSg==}
     engines: {node: '>=0.10.0'}
@@ -3192,10 +3182,6 @@ packages:
       react-dom: 18.2.0(react@18.2.0)
     dev: false
 
-  /react-responsive-masonry@2.1.7:
-    resolution: {integrity: sha512-/jOqnTVNtO8zRJMTl6ZXBex7EFYEIFBLVlkIFjiCT7omfm0CgNF2z4ST8RIr0v2ut15NWAQs7Q3kJJPhMoe3Ew==}
-    dev: false
-
   /react-smart-masonry@2.0.2(react-dom@18.2.0)(react@18.2.0):
     resolution: {integrity: sha512-Dxw9+zYZ4mZf1snLErMu/66Q6/KyWcQJwDMYnq7PK9RzLasgfd0t1Ra4VeRTQfvxT4ize2AqP4iZ9NxE0B9ynw==}
     peerDependencies:
@@ -3283,16 +3269,6 @@ packages:
     dependencies:
       jsesc: 0.5.0
     dev: true
-
-  /repeat-component@1.0.1(react@18.2.0):
-    resolution: {integrity: sha512-8pq0mVUixf9OzLmipmFObFpAlcA7cWvMYfxwKjVj3fiTGxDhC2uJSKT17gS1GWISHypy3MoQwKIzQVayH7j3DA==}
-    engines: {node: '>=10'}
-    peerDependencies:
-      react: '>=16'
-    dependencies:
-      is-function: 1.0.2
-      react: 18.2.0
-    dev: false
 
   /require-from-string@2.0.2:
     resolution: {integrity: sha512-Xf0nWe6RseziFMu+Ap9biiUbmplq6S9/p+7w7YXP/JBHhrUDDUhwa+vANyubuqfZWTveU//DYVGsDG7RKL/vEw==}
