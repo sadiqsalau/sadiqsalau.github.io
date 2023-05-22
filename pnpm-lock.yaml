@@ -34,6 +34,9 @@ dependencies:
   react-responsive-masonry:
     specifier: ^2.1.7
     version: 2.1.7
+  react-smart-masonry:
+    specifier: ^2.0.2
+    version: 2.0.2(react-dom@18.2.0)(react@18.2.0)
   repeat-component:
     specifier: ^1.0.1
     version: 1.0.1(react@18.2.0)
@@ -3191,6 +3194,16 @@ packages:
 
   /react-responsive-masonry@2.1.7:
     resolution: {integrity: sha512-/jOqnTVNtO8zRJMTl6ZXBex7EFYEIFBLVlkIFjiCT7omfm0CgNF2z4ST8RIr0v2ut15NWAQs7Q3kJJPhMoe3Ew==}
+    dev: false
+
+  /react-smart-masonry@2.0.2(react-dom@18.2.0)(react@18.2.0):
+    resolution: {integrity: sha512-Dxw9+zYZ4mZf1snLErMu/66Q6/KyWcQJwDMYnq7PK9RzLasgfd0t1Ra4VeRTQfvxT4ize2AqP4iZ9NxE0B9ynw==}
+    peerDependencies:
+      react: '>=16.8'
+      react-dom: '>=16.8'
+    dependencies:
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
     dev: false
 
   /react@18.2.0:
