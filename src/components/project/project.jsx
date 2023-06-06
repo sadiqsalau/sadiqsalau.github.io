@@ -77,7 +77,7 @@ export const Project = ({ project }) => {
               return (
                 <div
                   style={wrapperStyle}
-                  className="relative overflow-hidden rounded-md"
+                  className="relative overflow-hidden"
                 >
                   <ProgressiveImage src={src}>
                     {(src, loading) => {

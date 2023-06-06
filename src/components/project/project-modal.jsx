@@ -52,7 +52,6 @@ export const ProjectModal = ({ show, project, closeModal }) => {
                   <div
                     style={wrapperStyle}
                     onClick={onClick}
-                    className="overflow-hidden rounded-md"
                   >
                     <ProgressiveImage src={src}>
                       {(src, loading) => {
