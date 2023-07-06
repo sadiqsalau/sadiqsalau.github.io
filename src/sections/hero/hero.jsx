@@ -31,7 +31,7 @@ export const Hero = () => (
         >
           {/* Photo */}
           <img
-            src="/icon@512.png"
+            src="/logo.png"
             className="w-48 h-48 rounded-full shrink-0"
           />
 
