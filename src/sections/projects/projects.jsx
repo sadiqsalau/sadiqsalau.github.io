@@ -14,7 +14,7 @@ export const Projects = () => (
 
     <Masonry
       autoArrange
-      breakpoints={{ sm: 0, wide: 960 }}
+      breakpoints={{ sm: 0, wide: 920 }}
       columns={{ sm: 1, wide: 2 }}
       gap="0.5rem"
     >
