@@ -48,7 +48,7 @@ export const PWAPrompt = () => {
           {/* Photo */}
           <img
             src={import.meta.env.BASE_URL + "logo.png"}
-            className="w-10 h-10 shrink-0"
+            className="w-10 h-10 shrink-0 rounded-full"
           />
 
           {/* Toast content */}
