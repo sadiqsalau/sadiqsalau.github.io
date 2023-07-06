@@ -10,12 +10,12 @@ export const Contact = () => (
     <div
       className={clsx(
         "border border-green-500",
-        "rounded-lg p-4",
+        "rounded-md p-4",
         "flex flex-col gap-2",
         "shadow-[5px_5px_0px_-2px] shadow-green-700"
       )}
     >
-      <p className="p-2.5 bg-stone-800 rounded-lg">
+      <p className="p-2.5 bg-stone-800 rounded-md">
         Feel free to reach out to me via any of the platforms below
       </p>
 
@@ -27,7 +27,7 @@ export const Contact = () => (
               {...props}
               className={clsx(
                 "flex items-center gap-2",
-                "p-2 rounded-lg text-green-500",
+                "p-2 rounded-md text-green-500",
                 "hover:bg-green-500 hover:text-green-900"
               )}
             >

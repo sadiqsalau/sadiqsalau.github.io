@@ -19,7 +19,7 @@ export const Project = ({ project }) => {
         className={clsx(
           "bg-stone-800",
           "border border-transparent hover:border-green-500",
-          "rounded-lg p-4",
+          "rounded-md p-4",
           "flex flex-col gap-2"
         )}
       >
@@ -28,7 +28,7 @@ export const Project = ({ project }) => {
           <img
             src={project.icon}
             alt={project.title}
-            className="w-10 h-10 rounded-lg flex-none"
+            className="w-10 h-10 rounded-md flex-none"
           />
           {/* Details */}
           <div className="min-w-0 flex-1 flex flex-col gap-1.5">

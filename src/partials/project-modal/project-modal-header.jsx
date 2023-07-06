@@ -12,7 +12,7 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
     <img
       src={project.icon}
       alt={project.title}
-      className="w-10 h-10 rounded-lg flex-none"
+      className="w-10 h-10 rounded-md flex-none"
     />
 
     {/* Details */}
@@ -54,8 +54,8 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
           href={project.link}
           className={clsx(
             "flex gap-2",
-            "rounded-lg bg-green-500 text-green-900",
-            "font-bold px-4 py-1 outline-0 rounded-lg",
+            "rounded-md bg-green-500 text-green-900",
+            "font-bold px-4 py-1 outline-0 rounded-md",
             "hover:ring hover:ring-green-700",
             "focus:ring focus:ring-green-700",
             "border border-green-500"
@@ -72,7 +72,7 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
             className={clsx(
               "flex gap-2",
               "bg-[#f34f29]",
-              "font-bold px-4 py-1 outline-0 rounded-lg",
+              "font-bold px-4 py-1 outline-0 rounded-md",
               "hover:ring hover:ring-[#c23f21]",
               "focus:ring focus:ring-[#c23f21]"
             )}
@@ -87,7 +87,7 @@ export const ProjectModalHeader = ({ project, closeModal }) => (
     <button
       onClick={closeModal}
       className={clsx(
-        "self-start outline-0 rounded-lg focus:ring focus:ring-green-700"
+        "self-start outline-0 rounded-md focus:ring focus:ring-green-700"
       )}
     >
       <FaTimes className="w-6 h-6" />

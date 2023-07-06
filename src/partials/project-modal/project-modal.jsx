@@ -40,7 +40,7 @@ export const ProjectModal = () => {
 
             {/* Full Description */}
             {project.fullDescription ? (
-              <p className={clsx("p-4 rounded-lg", "bg-stone-800")}>
+              <p className={clsx("p-4 rounded-md", "bg-stone-800")}>
                 {project.fullDescription}
               </p>
             ) : null}

@@ -68,7 +68,7 @@ export const PWAPrompt = () => {
               <button
                 onClick={closeToast}
                 className={clsx(
-                  "font-bold px-4 py-1 outline-0 rounded-lg",
+                  "font-bold px-4 py-1 outline-0 rounded-md",
                   "hover:ring hover:ring-green-700",
                   "focus:ring focus:ring-green-700",
                   "border border-green-500",
@@ -83,7 +83,7 @@ export const PWAPrompt = () => {
                 <button
                   onClick={() => updateServiceWorker(true)}
                   className={clsx(
-                    "font-bold px-4 py-1 outline-0 rounded-lg",
+                    "font-bold px-4 py-1 outline-0 rounded-md",
                     "hover:ring hover:ring-green-700",
                     "focus:ring focus:ring-green-700",
                     "border border-green-500",
