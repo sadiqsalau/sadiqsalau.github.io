@@ -46,9 +46,9 @@ export const ProjectModal = () => {
             ) : null}
 
             {/* Photos */}
-            {project.images?.length ? (
+            {project.previewImages?.length ? (
               <ProjectPhotoAlbum
-                photos={project.images}
+                photos={project.previewImages}
                 onClick={handleImageClick}
               />
             ) : null}

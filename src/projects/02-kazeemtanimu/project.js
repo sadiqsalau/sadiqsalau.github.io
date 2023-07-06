@@ -17,6 +17,16 @@ export const project = {
       },
     })
   ),
+  previewImages: Object.values(
+    import.meta.glob("./screenshots/*.png", {
+      eager: true,
+      query: {
+        metadata: "",
+        withoutEnlargement: "", 
+        h: 450,
+      },
+    })
+  ),
   fullDescription:
     "I had the privilege of collaborating with a reputable web design company (TwelveSquares - twelvesquares.net) to create a remarkable website for Kazeem Tanimu",
 };

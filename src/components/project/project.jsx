@@ -61,11 +61,11 @@ export const Project = ({ project }) => {
         </div>
 
         {/* Photos */}
-        {project.images?.length ? (
+        {project.previewImages?.length ? (
           <ProjectPhotoAlbum
-            total={project.images.length}
-            photos={project.images.slice(0, MAX_IMAGES_PREVIEW)}
-            columns={Math.min(MAX_IMAGES_COLUMN, project.images.length)}
+            total={project.previewImages.length}
+            photos={project.previewImages.slice(0, MAX_IMAGES_PREVIEW)}
+            columns={Math.min(MAX_IMAGES_COLUMN, project.previewImages.length)}
           />
         ) : null}
       </a>
