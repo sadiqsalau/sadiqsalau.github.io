@@ -1,19 +1,18 @@
-import ProgressiveImage from "react-progressive-graceful-image";
 import clsx from "clsx";
-import { PhotoAlbum } from "react-photo-album";
-import { useState } from "react";
 
 import { MAX_IMAGES_COLUMN, MAX_IMAGES_PREVIEW } from "./project-constants";
-import { ProjectModal } from "./project-modal";
+import { ProjectPhotoAlbum } from "./project-photo-album";
+
+import { useAppContext } from "@/app-provider";
 
 export const Project = ({ project }) => {
-  const [showModal, setShowModal] = useState(false);
+  const { showProject } = useAppContext();
 
-  const handleClick = () => setShowModal(true);
-  const handleModalClose = () => setShowModal(false);
+  const handleClick = () => {
+    showProject(project);
+  }
 
   return (
-    <>
       <a
         role="button"
         onClick={handleClick}
@@ -32,7 +31,7 @@ export const Project = ({ project }) => {
             className="w-10 h-10 rounded-lg flex-none"
           />
           {/* Details */}
-          <div className="flex-1 flex flex-col gap-1.5">
+          <div className="min-w-0 flex-1 flex flex-col gap-1.5">
             <h4 className="font-fredoka-one">{project.title}</h4>
 
             {/* Technologies */}
@@ -63,59 +62,12 @@ export const Project = ({ project }) => {
 
         {/* Photos */}
         {project.images?.length ? (
-          <PhotoAlbum
+          <ProjectPhotoAlbum
+            total={project.images.length}
             photos={project.images.slice(0, MAX_IMAGES_PREVIEW)}
-            layout="columns"
-            spacing={5}
-            padding={0}
             columns={Math.min(MAX_IMAGES_COLUMN, project.images.length)}
-            renderPhoto={({
-              wrapperStyle,
-              layout: { index },
-              imageProps: { src },
-            }) => {
-              return (
-                <div
-                  style={wrapperStyle}
-                  className="relative overflow-hidden"
-                >
-                  <ProgressiveImage src={src}>
-                    {(src, loading) => {
-                      return loading ? (
-                        <div className="w-full h-full bg-stone-700/50 animate-pulse"></div>
-                      ) : (
-                        <img src={src} className="w-full h-full" />
-                      );
-                    }}
-                  </ProgressiveImage>
-
-                  {/* Count */}
-                  {project.images.length > MAX_IMAGES_PREVIEW &&
-                  index === MAX_IMAGES_PREVIEW - 1 ? (
-                    <div
-                      className={clsx(
-                        "absolute inset-0 ",
-                        "bg-neutral-800/20 backdrop-blur-sm",
-                        "flex justify-center items-center",
-                        "text-white text-lg font-fredoka-one"
-                      )}
-                    >
-                      +{project.images.length - MAX_IMAGES_PREVIEW}
-                    </div>
-                  ) : null}
-                </div>
-              );
-            }}
           />
         ) : null}
       </a>
-
-      {/* Modal */}
-      <ProjectModal
-        show={showModal}
-        project={project}
-        closeModal={handleModalClose}
-      />
-    </>
   );
 };
