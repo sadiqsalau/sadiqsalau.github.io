@@ -31,7 +31,7 @@ export const Hero = () => (
         >
           {/* Photo */}
           <img
-            src="/logo.png"
+            src={import.meta.env.BASE_URL + "logo.png"}
             className="w-48 h-48 rounded-full shrink-0"
           />
 

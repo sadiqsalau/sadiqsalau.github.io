@@ -47,12 +47,12 @@ export const PWAPrompt = () => {
         >
           {/* Photo */}
           <img
-            src={import.meta.env.BASE_URL + "icon@128.png"}
+            src={import.meta.env.BASE_URL + "logo.png"}
             className="w-10 h-10 shrink-0"
           />
 
           {/* Toast content */}
-          <div className="grow space-y-1">
+          <div className="min-w-0 grow space-y-1">
             <h4 className="font-fredoka-one leading-none">Sadiq Salau</h4>
             <p className="text-[.9375rem]">
               {offlineReady ? (
