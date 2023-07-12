@@ -1,3 +1,6 @@
+@import "slick-carousel/slick/slick.css"; 
+@import "slick-carousel/slick/slick-theme.css";
+
 /* Quicksand */
 @import "@fontsource/quicksand/latin-400";
 @import "@fontsource/quicksand/latin-700";
