@@ -34,9 +34,6 @@ jobs:
       - name: Build
         run: pnpm run build
 
-      - name: Generate PWA Assets
-        run: pnpm run generate-pwa-assets
-
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
