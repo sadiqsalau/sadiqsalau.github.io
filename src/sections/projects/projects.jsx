@@ -4,7 +4,6 @@ import { SectionHeading } from "@/components/section-heading/section-heading";
 
 import projectsList from "@/resources/projects";
 
-console.log(projectsList)
 
 export const Projects = () => (
   <div className="flex flex-col gap-2">
