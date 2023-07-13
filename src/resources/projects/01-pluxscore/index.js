@@ -2,7 +2,7 @@ import { SiLaravel, SiReact, SiTailwindcss } from "react-icons/si";
 
 import icon from "./project-icon.png?w=80&h=80";
 
-export const project = {
+export default {
   icon,
   title: "PluxScore",
   link: "https://pluxscore.com",

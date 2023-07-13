@@ -2,7 +2,9 @@ import Masonry from "react-smart-masonry";
 import { Project } from "@/components/project/project";
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
-import { projectsList } from "./projects-list";
+import projectsList from "@/resources/projects";
+
+console.log(projectsList)
 
 export const Projects = () => (
   <div className="flex flex-col gap-2">

@@ -2,7 +2,7 @@ import { SiComposer, SiLaravel, SiPhp } from "react-icons/si";
 
 import icon from "./project-icon.png?w=80&h=80";
 
-export const project = {
+export default {
   icon,
   title: "sadiqsalau/laravel-otp",
   link: "https://packagist.org/packages/sadiqsalau/laravel-otp",
