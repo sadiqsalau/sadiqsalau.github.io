@@ -32,7 +32,7 @@ export const Hero = () => (
           {/* Photo */}
           <img
             src={import.meta.env.BASE_URL + "logo.png"}
-            className="w-48 h-48 rounded-full shrink-0"
+            className="w-48 h-48 rounded-full shrink-0 p-4"
           />
 
           <div className="flex flex-col items-center gap-2 md:items-start">
