@@ -18,6 +18,8 @@ const sliderSettings = {
   arrows: false,
 
   autoplay: true,
+  autoplaySpeed: 10000,
+
   infinite: true,
   focusOnSelect: true,
   speed: 500,
