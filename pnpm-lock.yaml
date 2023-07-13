@@ -73,6 +73,9 @@ devDependencies:
   rollup-plugin-polyfill-node:
     specifier: ^0.12.0
     version: 0.12.0(rollup@2.79.1)
+  tailwind-scrollbar:
+    specifier: ^3.0.4
+    version: 3.0.4(tailwindcss@3.3.1)
   tailwindcss:
     specifier: ^3.3.1
     version: 3.3.1(postcss@8.4.23)
@@ -3949,6 +3952,15 @@ packages:
   /supports-preserve-symlinks-flag@1.0.0:
     resolution: {integrity: sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==}
     engines: {node: '>= 0.4'}
+    dev: true
+
+  /tailwind-scrollbar@3.0.4(tailwindcss@3.3.1):
+    resolution: {integrity: sha512-X/QBsn/C5u9x6/YvTc1Zo7b09Gqs5BfDe0UK/8LDQUv8IEBKF+p2ISTRwvAr50MH0hn/wTyCEOann7uXoa1/2Q==}
+    engines: {node: '>=12.13.0'}
+    peerDependencies:
+      tailwindcss: 3.x
+    dependencies:
+      tailwindcss: 3.3.1(postcss@8.4.23)
     dev: true
 
   /tailwindcss@3.3.1(postcss@8.4.23):
