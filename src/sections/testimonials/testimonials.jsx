@@ -60,9 +60,14 @@ const SliderDot = forwardRef((props, ref) => (
 export const Testimonials = () => {
   
   return (
-    <div className="min-w-0 w-full gap-2">
+    <div className="min-w-0 w-full flex flex-col gap-2">
       <SectionHeading>Testimonials</SectionHeading>
-      <div className="-m-1">
+      <p className="p-4 rounded-md bg-stone-800">
+        Testimonials are an important tool for any business or individual, as they provide social proof and help potential clients or employers understand the value of your work.
+      </p>
+      <p className="p-4 rounded-md bg-stone-800">In this section, you'll find a variety of testimonials that highlight my skills, work ethic, and professionalism. I hope these testimonials give you a better sense of what it's like to work with me and the kind of results I can deliver.</p>
+
+      <div className="-m-1 py-2">
         <Slider
           {...sliderSettings}
         >
