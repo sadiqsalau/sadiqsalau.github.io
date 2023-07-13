@@ -10,8 +10,7 @@ export const Projects = () => (
   <div className="flex flex-col gap-2">
     <SectionHeading>Projects</SectionHeading>
     <p className="p-4 rounded-md bg-stone-800">
-      As a React and Laravel web developer, I have completed several projects
-      that showcase my expertise in these technologies.
+      I have completed several projects that showcase my expertise in web development. Here are some of my favorite projects:
     </p>
 
     <Masonry
