@@ -1,4 +1,5 @@
 import { About } from "./sections/about/about";
+import { Skills } from "./sections/skills/skills";
 import { Contact } from "./sections/contact/contact";
 import { Footer } from "./sections/footer/footer";
 import { Hero } from "./sections/hero/hero";
@@ -20,6 +21,7 @@ export const App = () => (
     <MainArea>
       <SectionGroup>
         <About />
+        <Skills />
         <Projects />
         <Testimonials />
       </SectionGroup>
