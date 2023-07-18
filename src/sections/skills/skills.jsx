@@ -91,7 +91,7 @@ export const Skills = () => (
           )}
           title={`${title} - ${tag}`}
           >
-            <Icon className="w-14 h-14 text-green-500" />
+            <Icon className="w-12 h-12 text-green-500" />
             <h3 className="font-fredoka-one text-stone-300">{title}</h3>
             <div className="min-w-0 w-full flex justify-center">
               <span className={clsx(
