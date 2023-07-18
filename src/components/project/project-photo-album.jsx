@@ -2,7 +2,7 @@ import clsx from "clsx";
 import ProgressiveImage from "react-progressive-graceful-image";
 import { PhotoAlbum } from "react-photo-album";
 
-export const ProjectPhotoAlbum = ({ total = 0, photos, ...props }) => (
+export const ProjectPhotoAlbum = ({ total = 0, delay = 0, photos, ...props }) => (
 	<PhotoAlbum
 		{...props}
 	    photos={photos}
@@ -20,7 +20,7 @@ export const ProjectPhotoAlbum = ({ total = 0, photos, ...props }) => (
 	          onClick={onClick}
 	          className="relative overflow-hidden"
 	        >
-	          <ProgressiveImage  threshold={[1]} delay={500} src={src}>
+	          <ProgressiveImage  delay={delay} src={src}>
 	            {(src, loading) => {
 	              return loading ? (
 	                <div className="w-full h-full bg-stone-700/50 animate-pulse"></div>

@@ -63,6 +63,7 @@ export const Project = ({ project }) => {
         {/* Photos */}
         {project.previewImages?.length ? (
           <ProjectPhotoAlbum
+            delay={1000}
             total={project.previewImages.length}
             photos={project.previewImages.slice(0, MAX_IMAGES_PREVIEW)}
             columns={Math.min(MAX_IMAGES_COLUMN, project.previewImages.length)}
