@@ -25,7 +25,7 @@ export const App = () => (
         <Projects />
         <Testimonials />
       </SectionGroup>
-      <SectionGroup className="[@media(min-height:400px)]:sticky top-2">
+      <SectionGroup className="[@media(min-height:480px)]:sticky top-2">
         <Contact />
         <Resume />
       </SectionGroup>
