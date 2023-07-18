@@ -17,37 +17,37 @@ const list = [
   {
     title: "HTML",
     icon: SiHtml5,
-    tag: "Frontend"
+    tag: "Structure"
   },
   {
     title: "CSS",
     icon: SiCss3,
-    tag: "Frontend"
+    tag: "Styling"
   },
   {
     title: "TailwindCSS",
     icon: SiTailwindcss,
-    tag: "Frontend"
+    tag: "Utility Classes"
   },
   {
     title: "Bootstrap",
     icon: SiBootstrap,
-    tag: "Frontend"
+    tag: "Responsiveness"
   },
   {
     title: "Javascript",
     icon: SiJavascript,
-    tag: "Frontend"
+    tag: "Interactivity"
   },
   {
     title: "React",
     icon: SiReact,
-    tag: "Frontend"
+    tag: "Components"
   },
   {
     title: "PHP",
     icon: SiPhp,
-    tag: "Backend"
+    tag: "Server-Side"
   },
   {
     title: "Laravel",
@@ -57,7 +57,7 @@ const list = [
   {
     title: "MySQL",
     icon: SiMysql,
-    tag: "Backend"
+    tag: "Database"
   },
   {
     title: "Git",
@@ -88,7 +88,9 @@ export const Skills = () => (
             "border border-transparent",
             "hover:border-green-500",
             "px-2 py-4 gap-2"
-          )}>
+          )}
+          title={`${title} - ${tag}`}
+          >
             <Icon className="w-14 h-14 text-green-500" />
             <h3 className="font-fredoka-one text-stone-300">{title}</h3>
             <div className="min-w-0 w-full flex justify-center">
