@@ -23,7 +23,7 @@ export default {
       query: {
         metadata: "",
         withoutEnlargement: "", 
-        h: 450,
+        w: 350,
       },
     })
   ),
