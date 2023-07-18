@@ -6,6 +6,8 @@ import {
   FaPhone,
 } from "react-icons/fa";
 
+import { SiUpwork } from "react-icons/si";
+
 export const contactHandles = [
   {
     icon: FaEnvelope,
@@ -34,6 +36,12 @@ export const contactHandles = [
     icon: FaFacebook,
     href: "https://facebook.com/thesadiqsalau",
     content: "@thesadiqsalau",
+    target: "_blank",
+  },
+  {
+    icon: SiUpwork,
+    href: "https://www.upwork.com/freelancers/sadiqsalau",
+    content: "Hire Me!",
     target: "_blank",
   },
 ];
