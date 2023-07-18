@@ -20,7 +20,7 @@ export const ProjectPhotoAlbum = ({ total = 0, photos, ...props }) => (
 	          onClick={onClick}
 	          className="relative overflow-hidden"
 	        >
-	          <ProgressiveImage src={src}>
+	          <ProgressiveImage  threshold={[1]} delay={500} src={src}>
 	            {(src, loading) => {
 	              return loading ? (
 	                <div className="w-full h-full bg-stone-700/50 animate-pulse"></div>
