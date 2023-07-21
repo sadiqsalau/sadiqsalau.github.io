@@ -18,7 +18,7 @@ export const ProjectPhotoAlbum = ({ total = 0, delay = 0, photos, ...props }) =>
 	        <div
 	          style={wrapperStyle}
 	          onClick={onClick}
-	          className="relative overflow-hidden"
+	          className="relative overflow-hidden rounded-sm"
 	        >
 	          <ProgressiveImage  delay={delay} src={src}>
 	            {(src, loading) => {
