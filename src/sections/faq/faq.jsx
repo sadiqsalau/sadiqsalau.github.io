@@ -49,7 +49,7 @@ export const FAQ = () => (
       expertise.
     </p>
 
-    <div className={clsx("flex flex-col gap-1")}>
+    <div className={clsx("flex flex-col gap-2")}>
       {list.map(({ question, answer }, i) => (
         <Disclosure key={i}>
           {({ open }) => (
@@ -58,7 +58,8 @@ export const FAQ = () => (
                 "rounded-lg",
                 "overflow-x-hidden",
                 "border",
-                open ? "border-green-500" : "border-transparent",
+                "shadow-[5px_5px_0px_-2px]",
+                open ? ["border-green-500",  "shadow-green-700"] : ["border-transparent", "shadow-transparent"],
               )}
             >
               <Disclosure.Button
