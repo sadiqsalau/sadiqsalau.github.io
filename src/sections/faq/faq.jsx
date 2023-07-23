@@ -49,7 +49,7 @@ export const FAQ = () => (
       expertise.
     </p>
 
-    <div className={clsx("flex flex-col gap-2")}>
+    <div className={clsx("flex flex-col gap-1")}>
       {list.map(({ question, answer }, i) => (
         <Disclosure key={i}>
           {({ open }) => (
@@ -64,7 +64,7 @@ export const FAQ = () => (
               <Disclosure.Button
                 className={clsx(
                   "p-4 bg-stone-800",
-                  "flex w-full gap-2 items-center",
+                  "flex w-full gap-4 items-center",
                   "font-bold",
                   "text-left",
                   open
@@ -72,7 +72,15 @@ export const FAQ = () => (
                     : ["text-stone-400", "hover:text-stone-300"],
                 )}
               >
-                <FaChevronUp className={clsx(open ? "rotate-180" : "")} />{" "}
+                <span className={clsx(
+                    "bg-stone-700",
+                    "w-9 h-9",
+                    "flex items-center justify-center",
+                    "rounded-full",
+                    "shrink-0"
+                  )}>
+                  <FaChevronUp className={clsx(open ? "rotate-180" : "")} />{" "}
+                </span>
                 {question}
               </Disclosure.Button>
 
