@@ -1,9 +1,15 @@
-import Masonry from "react-smart-masonry";
+import Masonry from 'react-masonry-css'
 import { Project } from "@/components/project/project";
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
 import projectsList from "@/resources/projects";
 
+
+
+const breakpointColumnsObj = {
+  default: 2,
+  919: 1
+};
 
 export const Projects = () => (
   <div className="flex flex-col gap-2">
@@ -13,13 +19,14 @@ export const Projects = () => (
     </p>
 
     <Masonry
-      autoArrange
-      breakpoints={{ sm: 0, wide: 920 }}
-      columns={{ sm: 1, wide: 2 }}
-      gap="0.5rem"
+      breakpointCols={breakpointColumnsObj}
+      className="flex -ml-2 w-auto"
+      columnClassName="pl-2"
     >
       {projectsList.map((project, i) => (
-        <Project key={i} project={project} />
+        <div key={i} className="mb-2">
+          <Project project={project} />
+        </div>
       ))}
     </Masonry>
   </div>
