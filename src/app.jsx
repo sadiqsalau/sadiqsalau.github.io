@@ -5,6 +5,7 @@ import { Footer } from "./sections/footer/footer";
 import { Hero } from "./sections/hero/hero";
 import { Projects } from "./sections/projects/projects";
 import { Testimonials } from "./sections/testimonials/testimonials";
+import { FAQ } from "./sections/faq/faq";
 import { Resume } from "./sections/resume/resume";
 
 import { MainArea } from "./partials/main-area/main-area";
@@ -24,6 +25,7 @@ export const App = () => (
         <Skills />
         <Projects />
         <Testimonials />
+        <FAQ />
       </SectionGroup>
       <SectionGroup className="[@media(min-height:480px)]:sticky top-2">
         <Contact />
