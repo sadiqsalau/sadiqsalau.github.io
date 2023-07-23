@@ -21,7 +21,7 @@ export const Projects = () => (
     <Masonry
       breakpointCols={breakpointColumnsObj}
       className="flex -ml-2 w-auto"
-      columnClassName="pl-2"
+      columnClassName="pl-2 bg-clip-padding"
     >
       {projectsList.map((project, i) => (
         <div key={i} className="mb-2">
