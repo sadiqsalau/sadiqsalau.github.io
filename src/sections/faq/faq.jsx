@@ -18,13 +18,13 @@ const list = [
   },
   {
     question: "Why do you use Tailwind CSS?",
-    answer: "I use Tailwind CSS for several compelling reasons. First and foremost, Tailwind CSS allows me to rapidly build and style user interfaces with its utility-first approach. By leveraging pre-designed utility classes directly in my HTML markup, I can save significant development time and effort. The framework's highly customizable nature enables me to create unique and visually appealing designs tailored to my clients' specific needs."
+    answer: "I use Tailwind CSS for several compelling reasons. First and foremost, Tailwind CSS allows me to rapidly build and style user interfaces with its utility-first approach.\n\nBy leveraging pre-designed utility classes directly in my HTML markup, I can save significant development time and effort. The framework's highly customizable nature enables me to create unique and visually appealing designs tailored to my clients' specific needs."
   },
   {
     question:
       "Can you explain your development process for creating web applications?",
     answer:
-      "Sure! My development process typically involves understanding the project requirements, acquiring the UI/UX, setting up the development environment, writing clean and maintainable code, conducting thorough testing, and finally deploying the application. I also emphasize regular communication with clients to ensure their feedback is incorporated throughout the development cycle.",
+      "Sure! My development process typically involves understanding the project requirements, acquiring the UI/UX, setting up the development environment, writing clean and maintainable code, conducting thorough testing, and finally deploying the application.\n\nI also emphasize regular communication with clients to ensure their feedback is incorporated throughout the development cycle.",
   },
   {
     question:
@@ -92,7 +92,7 @@ export const FAQ = () => (
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="p-4">{answer}</Disclosure.Panel>
+                <Disclosure.Panel className="p-4 whitespace-pre-line">{answer}</Disclosure.Panel>
               </Transition>
             </div>
           )}
