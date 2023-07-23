@@ -93,7 +93,7 @@ export const FAQ = () => (
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="p-4 whitespace-pre-line">{answer}</Disclosure.Panel>
+                <Disclosure.Panel className="p-4 whitespace-pre-line bg-stone-700">{answer}</Disclosure.Panel>
               </Transition>
             </div>
           )}
