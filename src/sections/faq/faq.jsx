@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import { Disclosure, Transition } from "@headlessui/react";
-import { FaChevronUp } from "react-icons/fa";
+import { FaChevronRight } from "react-icons/fa";
 
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
@@ -22,23 +22,22 @@ export const FAQ = () => (
             <div
               className={clsx(
                 "rounded-lg",
-                "overflow-x-hidden",
-                "border",
-                "shadow-[5px_5px_0px_-2px]",
-                open ? ["border-green-500",  "shadow-green-700"] : ["border-transparent", "shadow-transparent"],
+                "overflow-x-hidden"
               )}
             >
+              {/* Question */}
               <Disclosure.Button
                 className={clsx(
                   "p-4 bg-stone-800",
-                  "flex w-full gap-4 items-center",
+                  "flex w-full gap-4 items-center justify-between",
                   "font-bold",
                   "text-left",
                   open
                     ? "text-green-500"
-                    : ["text-stone-400", "hover:text-stone-300"],
+                    : "hover:text-green-500",
                 )}
               >
+                {question}
                 <span className={clsx(
                     "bg-stone-700",
                     "w-9 h-9",
@@ -46,11 +45,11 @@ export const FAQ = () => (
                     "rounded-full",
                     "shrink-0"
                   )}>
-                  <FaChevronUp className={clsx(open ? "rotate-180" : "")} />{" "}
+                  <FaChevronRight className={clsx(open ? "rotate-90" : "")} />
                 </span>
-                {question}
               </Disclosure.Button>
 
+              {/* Answer */}
               <Transition
                 enter="transition duration-100 ease-out"
                 enterFrom="transform scale-95 opacity-0"
@@ -59,7 +58,7 @@ export const FAQ = () => (
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="p-4 whitespace-pre-line bg-stone-700">{answer}</Disclosure.Panel>
+                <Disclosure.Panel className="p-4 pt-0 whitespace-pre-line bg-stone-800">{answer}</Disclosure.Panel>
               </Transition>
             </div>
           )}
