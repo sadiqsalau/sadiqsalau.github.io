@@ -58,7 +58,9 @@ export const FAQ = () => (
                 leaveFrom="transform scale-100 opacity-100"
                 leaveTo="transform scale-95 opacity-0"
               >
-                <Disclosure.Panel className="p-4 pt-0 whitespace-pre-line bg-stone-800">{answer}</Disclosure.Panel>
+                <Disclosure.Panel className="p-4 pt-0 bg-stone-800 flex flex-col gap-2">
+                  {answer.map((line, i)=><p key={i}>{line}</p>)}
+                </Disclosure.Panel>
               </Transition>
             </div>
           )}
