@@ -1,7 +1,6 @@
 import clsx from "clsx";
 import { Disclosure, Transition } from "@headlessui/react";
 import { FaChevronRight } from "react-icons/fa";
-
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
 import faqList from "./faq-list";
@@ -19,12 +18,7 @@ export const FAQ = () => (
       {faqList.map(({ question, answer }, i) => (
         <Disclosure key={i}>
           {({ open }) => (
-            <div
-              className={clsx(
-                "rounded-lg",
-                "overflow-x-hidden"
-              )}
-            >
+            <div className={clsx("rounded-lg", "overflow-x-hidden")}>
               {/* Question */}
               <Disclosure.Button
                 className={clsx(
@@ -34,17 +28,19 @@ export const FAQ = () => (
                   "text-left",
                   open
                     ? "text-green-500"
-                    : "hover:text-green-500",
+                    : "text-neutral-400 hover:text-green-500"
                 )}
               >
                 {question}
-                <span className={clsx(
+                <span
+                  className={clsx(
                     "bg-stone-700",
                     "w-9 h-9",
                     "flex items-center justify-center",
                     "rounded-full",
                     "shrink-0"
-                  )}>
+                  )}
+                >
                   <FaChevronRight className={clsx(open ? "rotate-90" : "")} />
                 </span>
               </Disclosure.Button>
@@ -59,7 +55,9 @@ export const FAQ = () => (
                 leaveTo="transform scale-95 opacity-0"
               >
                 <Disclosure.Panel className="p-4 pt-0 bg-stone-800 flex flex-col gap-2">
-                  {answer.map((line, i)=><p key={i}>{line}</p>)}
+                  {answer.map((line, i) => (
+                    <p key={i}>{line}</p>
+                  ))}
                 </Disclosure.Panel>
               </Transition>
             </div>
