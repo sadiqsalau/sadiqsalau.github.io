@@ -1,4 +1,4 @@
-import { SiBootstrap, SiCodeigniter } from "react-icons/si";
+import { SiReact, SiTailwindcss } from "react-icons/si";
 
 import icon from "./project-icon.png?w=80&h=80";
 
@@ -7,7 +7,7 @@ export default {
   title: "Kazeem Tanimu",
   link: "https://kazeemtanimu.com",
   tags: ["Developer / Designer"],
-  technologies: [SiBootstrap, SiCodeigniter],
+  technologies: [SiReact, SiTailwindcss],
   description: "kazeemtanimu.com",
   images: Object.values(
     import.meta.glob("./screenshots/*.png", {
@@ -22,7 +22,7 @@ export default {
       eager: true,
       query: {
         metadata: "",
-        withoutEnlargement: "", 
+        withoutEnlargement: "",
         w: 350,
       },
     })
