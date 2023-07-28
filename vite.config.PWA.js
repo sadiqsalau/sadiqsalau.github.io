@@ -6,11 +6,11 @@ export default (env) => ({
     navigateFallbackAllowlist: [/^\/$/],
   },
   manifest: {
-    name: "Sadiq Salau",
-    short_name: "Sadiq Salau",
-    description: "Full-Stack Web Developer",
-    theme_color: "#292524",
-    background_color: "#292524",
+    name: env.VITE_PWA_MANIFEST_NAME,
+    short_name: env.VITE_PWA_MANIFEST_SHORT_NAME,
+    description: env.VITE_PWA_MANIFEST_DESCRIPTION,
+    theme_color: env.VITE_PWA_MANIFEST_THEME_COLOR,
+    background_color: env.VITE_PWA_MANIFEST_BACKGROUND_COLOR,
     start_url: "./",
     icons: [
       {

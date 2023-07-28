@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="icon" href="/favicon.ico" sizes="any">
-    <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="/src/css/main.css" />
-    <meta name="theme-color" content="#292524" />
-    <meta name="description" content="Sadiq Salau - Full-Stack Web Developer" />
-    <title>Sadiq Salau</title>
-  </head>
-  <body
-    class="
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="apple-touch-icon" href="/apple-touch-icon-180x180.png">
+
+  <link rel="stylesheet" href="/src/css/main.css" />
+  <meta name="theme-color" content="<%= VITE_APP_THEME_COLOR %>" />
+  <meta name="description" content="<%= VITE_APP_DESCRIPTION %>" />
+  <title>
+    <%= VITE_APP_TITLE %>
+  </title>
+</head>
+
+<body class="
       bg-stone-800 
       text-slate-100 
       selection:bg-green-500 
@@ -22,16 +25,14 @@
       scrollbar-thin 
       scrollbar-thumb-stone-600
       scrollbar-track-stone-700
-  "
-  >
-    <div id="root">
-      <!-- Splash -->
-      <div
-        class="min-h-screen supports-[min-height:100dvh]:min-h-[100dvh] flex justify-center items-center"
-      >
-        <img src="/logo.png" class="w-32 h-32 rounded-full" alt="Sadiq Salau" />
-      </div>
+  ">
+  <div id="root">
+    <!-- Splash -->
+    <div class="min-h-screen supports-[min-height:100dvh]:min-h-[100dvh] flex justify-center items-center">
+      <img src="/logo.png" class="w-32 h-32 rounded-full" alt="Sadiq Salau" />
     </div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+  </div>
+  <script type="module" src="/src/main.jsx"></script>
+</body>
+
 </html>
