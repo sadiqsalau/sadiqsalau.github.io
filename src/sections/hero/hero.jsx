@@ -1,3 +1,4 @@
+import Logo from "@/assets/images/logo.png?w=384";
 import clsx from "clsx";
 import { FaChevronDown } from "react-icons/fa";
 import { SiLaravel, SiReact } from "react-icons/si";
@@ -31,7 +32,8 @@ export const Hero = () => (
         >
           {/* Photo */}
           <img
-            src={import.meta.env.BASE_URL + "logo.png"}
+            src={Logo}
+            alt={import.meta.env.VITE_APP_TITLE}
             className="w-48 h-48 rounded-full shrink-0"
           />
 
