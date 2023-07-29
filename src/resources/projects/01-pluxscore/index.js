@@ -8,7 +8,7 @@ export default {
   link: "https://pluxscore.com",
   tags: ["Developer"],
   technologies: [SiReact, SiTailwindcss, SiLaravel],
-  description: "Social media for sport fans",
+  description: "pluxscore.com",
   images: Object.values(
     import.meta.glob("./screenshots/*", {
       eager: true,
