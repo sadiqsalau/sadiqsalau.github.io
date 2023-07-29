@@ -1,6 +1,6 @@
 import { SiComposer, SiLaravel, SiPhp } from "react-icons/si";
 
-import icon from "./project-icon.png?w=80&h=80";
+import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
