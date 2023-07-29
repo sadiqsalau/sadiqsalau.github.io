@@ -1,4 +1,4 @@
-import Logo from "@/assets/images/logo.png?w=80";
+import Logo from "@/assets/images/logo.png?w=80&format=webp";
 import clsx from "clsx";
 import { Fragment } from "react";
 import { Transition } from "@headlessui/react";

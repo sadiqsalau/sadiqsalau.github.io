@@ -1,4 +1,4 @@
-import Logo from "@/assets/images/logo.png?w=384";
+import Logo from "@/assets/images/logo.png?w=384&format=webp";
 import clsx from "clsx";
 import { FaChevronDown } from "react-icons/fa";
 import { SiLaravel, SiReact } from "react-icons/si";
