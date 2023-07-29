@@ -2,7 +2,7 @@ export default (env) => ({
   scope: "./",
   workbox: {
     globPatterns: ["**/[!_]*"],
-    globIgnores: ["**/screenshot-*.*", "**/*.pdf"],
+    globIgnores: ["**/screenshot-*.*", "**/*.pdf", "**/pwa-icon.*"],
     navigateFallbackAllowlist: [/^\/$/],
   },
   manifest: {

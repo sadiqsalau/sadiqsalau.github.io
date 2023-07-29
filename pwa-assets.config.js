@@ -22,5 +22,5 @@ export default defineConfig({
       },
     },
   },
-  images: ["public/logo.png"],
+  images: ["public/pwa-icon.png"],
 });
