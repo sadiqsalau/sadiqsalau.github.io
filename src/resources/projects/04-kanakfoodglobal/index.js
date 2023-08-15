@@ -1,14 +1,14 @@
-import { SiReact, SiTailwindcss } from "react-icons/si";
+import { SiBootstrap, SiCss3 } from "react-icons/si";
 
 import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
-  title: "Kazeem Tanimu",
-  link: "https://kazeemtanimu.com",
+  title: "Kanak Food Gloabl",
+  link: "https://kanakfoodglobal.com.ng",
   tags: ["TwelveSquares", "Designer"],
-  technologies: [SiReact, SiTailwindcss],
-  description: "kazeemtanimu.com",
+  technologies: [SiCss3, SiBootstrap],
+  description: "kanakfoodglobal.com.ng",
   images: Object.values(
     import.meta.glob("./screenshots/*", {
       eager: true,
@@ -30,5 +30,5 @@ export default {
     })
   ),
   fullDescription:
-    "Kazeem Tanimu is the founder and CEO of Kazeem Tanimu. TM is a fashion entrepreneur, lobbyst, social political strategist, social project engineer, iLeader and founder of TM Incorporated, a 24th Century Group of companies based in Nigeria. ",
+    "Kanak Foods Global operates a state-of-the-art Cold Room at Light House Estate Shopping Complex, By The Pent House Estate, Pyakasa, as part of food supply chain in Lugbe Community and Abuja.",
 };

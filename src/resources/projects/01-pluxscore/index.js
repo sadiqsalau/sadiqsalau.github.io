@@ -30,5 +30,5 @@ export default {
     })
   ),
   fullDescription:
-    "As a ReactJS + Laravel developer at Pluxscore, I was responsible for developing and maintaining web applications using these technologies. This include creating interactive user interfaces, integrating with backend APIs and databases, and implementing security features to protect user data.",
+    "Dive into the exhilarating world of sports with Pluxscore, the premier social media platform designed exclusively for sports enthusiasts. Connect, chat, and share your passion for all things sports in one dynamic and engaging space.",
 };
