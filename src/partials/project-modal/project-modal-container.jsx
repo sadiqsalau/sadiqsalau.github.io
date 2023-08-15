@@ -18,7 +18,7 @@ export const ProjectModalContainer = (props) => (
       </Transition.Child>
 
       {/* Content */}
-      <div className="fixed inset-0 overflow-y-auto">
+      <div className="fixed inset-0 overflow-y-auto scrollbar-thin scrollbar-thumb-stone-600 scrollbar-track-stone-700">
         <div className="flex min-h-full items-center justify-center p-4 text-center">
           <Transition.Child
             as={Fragment}
