@@ -4,7 +4,7 @@ import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
-  title: "Kanak Food Gloabl",
+  title: "Kanak Food Global",
   link: "https://kanakfoodglobal.com.ng",
   tags: ["TwelveSquares", "Designer"],
   technologies: [SiCss3, SiBootstrap],
