@@ -8,7 +8,7 @@ import faqList from "./faq-list";
 export const FAQ = () => (
   <div className="flex flex-col gap-2">
     <SectionHeading>FAQ</SectionHeading>
-    <p className="p-4 rounded-md bg-stone-800">
+    <p className="text-center text-stone-300">
       This section is designed to provide you with answers to the most commonly
       asked queries and shed light on my development process, skills, and
       expertise.
