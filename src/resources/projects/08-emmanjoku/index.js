@@ -6,7 +6,7 @@ export default {
   icon,
   title: "Emma Njoku",
   link: "https://emmanjoku.com",
-  tags: ["Assistant Developer"],
+  tags: ["Developer"],
   technologies: [SiReact, SiTailwindcss],
   description: "emmanjoku.com",
   images: Object.values(
