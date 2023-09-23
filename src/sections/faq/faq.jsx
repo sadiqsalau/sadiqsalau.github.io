@@ -1,9 +1,8 @@
 import clsx from "clsx";
+import faq from "@/resources/faq";
 import { Disclosure, Transition } from "@headlessui/react";
 import { FaChevronRight } from "react-icons/fa";
 import { SectionHeading } from "@/components/section-heading/section-heading";
-
-import faqList from "./faq-list";
 
 export const FAQ = () => (
   <div className="flex flex-col gap-2">
@@ -15,7 +14,7 @@ export const FAQ = () => (
     </p>
 
     <div className={clsx("my-4 flex flex-col gap-2")}>
-      {faqList.map(({ question, answer }, i) => (
+      {faq.map(({ question, answer }, i) => (
         <Disclosure key={i}>
           {({ open }) => (
             <div className={clsx("rounded-lg", "overflow-x-hidden")}>
