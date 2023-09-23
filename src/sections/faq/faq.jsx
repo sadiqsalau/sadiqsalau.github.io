@@ -14,7 +14,7 @@ export const FAQ = () => (
       expertise.
     </p>
 
-    <div className={clsx("flex flex-col gap-2")}>
+    <div className={clsx("my-4 flex flex-col gap-2")}>
       {faqList.map(({ question, answer }, i) => (
         <Disclosure key={i}>
           {({ open }) => (
