@@ -12,7 +12,7 @@ export const Clients = () => (
       and challenges.{" "}
     </p>
 
-    <Marquee autoFill className={clsx("bg-white rounded-lg")} gradient>
+    <Marquee autoFill className={clsx("bg-white rounded-lg my-4")} gradient>
       {clients.map((client, i) => (
         <img key={i} src={client.src} className="m-4 mx-7" />
       ))}
