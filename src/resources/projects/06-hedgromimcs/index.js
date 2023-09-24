@@ -6,7 +6,7 @@ export default {
   icon,
   title: "Hedgromimcs",
   link: "https://hedgromimcs.com.ng",
-  tags: ["Assistant Developer"],
+  tags: ["Akmustech", "Assistant Developer"],
   technologies: [SiWordpress],
   description: "hedgromimcs.com.ng",
   images: Object.values(
