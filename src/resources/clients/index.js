@@ -1,8 +1,10 @@
 export default Object.values(
-  import.meta.glob("./*", {
+  import.meta.glob("./images/*", {
     eager: true,
+    import: "default",
+
     query: {
-      metadata: "",
+      as: "metadata",
       format: "webp",
       withoutEnlargement: "",
       h: 60,

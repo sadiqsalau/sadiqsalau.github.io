@@ -1,10 +1,10 @@
 import "yet-another-react-lightbox/styles.css";
 
 import clsx from "clsx";
+import { BsBoxArrowInUpRight } from "react-icons/bs";
 import { Dialog } from "@headlessui/react";
 import { FaTimes } from "react-icons/fa";
 import { SiGit } from "react-icons/si";
-import { BsBoxArrowInUpRight } from "react-icons/bs";
 
 export const ProjectModalHeader = ({ project, closeModal }) => (
   <div className="flex gap-2">

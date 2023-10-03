@@ -1,5 +1,5 @@
-import clsx from "clsx";
 import ProgressiveImage from "react-progressive-graceful-image";
+import clsx from "clsx";
 import { PhotoAlbum } from "react-photo-album";
 
 export const ProjectPhotoAlbum = ({

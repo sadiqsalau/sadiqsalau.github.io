@@ -13,8 +13,9 @@ export default {
   images: Object.values(
     import.meta.glob("./screenshots/*", {
       eager: true,
+      import: "default",
       query: {
-        metadata: "",
+        as: "metadata",
         format: "webp",
       },
     })
@@ -22,8 +23,9 @@ export default {
   previewImages: Object.values(
     import.meta.glob("./screenshots/*", {
       eager: true,
+      import: "default",
       query: {
-        metadata: "",
+        as: "metadata",
         format: "webp",
         withoutEnlargement: "",
         w: 350,

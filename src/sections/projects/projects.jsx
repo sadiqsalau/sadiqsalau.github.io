@@ -1,21 +1,19 @@
-import Masonry from 'react-masonry-css'
+import Masonry from "react-masonry-css";
+import projectsList from "@/resources/projects";
 import { Project } from "@/components/project/project";
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
-import projectsList from "@/resources/projects";
-
-
-
 const breakpointColumnsObj = {
   default: 2,
-  919: 1
+  919: 1,
 };
 
 export const Projects = () => (
   <div className="flex flex-col gap-2">
     <SectionHeading>Projects</SectionHeading>
     <p className="p-4 rounded-md bg-stone-800">
-      I have completed several projects that showcase my expertise in web development. Here are some of my favorite projects:
+      I have completed several projects that showcase my expertise in web
+      development. Here are some of my favorite projects:
     </p>
 
     <Masonry

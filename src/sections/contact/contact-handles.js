@@ -5,7 +5,6 @@ import {
   FaLinkedin,
   FaPhone,
 } from "react-icons/fa";
-
 import { SiUpwork } from "react-icons/si";
 
 export const contactHandles = [
