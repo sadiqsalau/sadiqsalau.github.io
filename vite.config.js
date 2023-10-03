@@ -15,6 +15,7 @@ export default defineConfig(({ command, mode }) => {
     resolve: {
       alias: {
         "@": resolve("src"),
+        "~@fontsource": "@fontsource",
       },
     },
     plugins: [

@@ -1,0 +1,9 @@
+@use "@fontsource/fredoka-one/scss/mixins" as FredokaOne;
+@use "@fontsource/quicksand/scss/mixins" as Quicksand;
+
+/** Fredoka One */
+@include FredokaOne.fontFace($display: block);
+
+/** Quicksand */
+@include Quicksand.fontFace($display: block);
+@include Quicksand.fontFace($display: block, $weight: 700);

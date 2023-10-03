@@ -1,12 +1,7 @@
-@import "slick-carousel/slick/slick.css"; 
+@import "./fonts.scss";
+
+@import "slick-carousel/slick/slick.css";
 @import "slick-carousel/slick/slick-theme.css";
-
-/* Quicksand */
-@import "@fontsource/quicksand/latin-400";
-@import "@fontsource/quicksand/latin-700";
-
-/* Fredoka One */
-@import "@fontsource/fredoka-one/latin-400";
 
 @tailwind base;
 @tailwind components;
