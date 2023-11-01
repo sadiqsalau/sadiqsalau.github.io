@@ -55,7 +55,9 @@ export const FAQ = () => (
               >
                 <Disclosure.Panel className="p-4 pt-0 bg-stone-800 flex flex-col gap-2">
                   {answer.map((line, i) => (
-                    <p key={i}>{line}</p>
+                    <p key={i} className="p-4 bg-stone-700/50">
+                      {line}
+                    </p>
                   ))}
                 </Disclosure.Panel>
               </Transition>
