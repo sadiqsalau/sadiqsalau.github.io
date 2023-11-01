@@ -1,7 +1,7 @@
 import clsx from "clsx";
 import faq from "@/resources/faq";
 import { Disclosure, Transition } from "@headlessui/react";
-import { FaChevronRight } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { SectionHeading } from "@/components/section-heading/section-heading";
 
 export const FAQ = () => (
@@ -13,35 +13,26 @@ export const FAQ = () => (
       expertise.
     </p>
 
-    <div className={clsx("my-4 flex flex-col gap-2")}>
+    <ul className={clsx("my-4 flex flex-col gap-2")}>
       {faq.map(({ question, answer }, i) => (
         <Disclosure key={i}>
           {({ open }) => (
-            <div className={clsx("rounded-lg", "overflow-x-hidden")}>
+            <li className={clsx("rounded-lg", "overflow-x-hidden")}>
               {/* Question */}
               <Disclosure.Button
                 className={clsx(
                   "p-4 bg-stone-800",
                   "flex w-full gap-4 items-center justify-between",
-                  "font-bold",
                   "text-left",
                   open
                     ? "text-green-500"
-                    : "text-neutral-400 hover:text-green-500"
+                    : "text-neutral-300 hover:text-green-500"
                 )}
               >
                 {question}
-                <span
-                  className={clsx(
-                    "bg-stone-700",
-                    "w-9 h-9",
-                    "flex items-center justify-center",
-                    "rounded-full",
-                    "shrink-0"
-                  )}
-                >
-                  <FaChevronRight className={clsx(open ? "rotate-90" : "")} />
-                </span>
+                <FaArrowRight
+                  className={clsx("shrink-0", open ? "rotate-90" : "")}
+                />
               </Disclosure.Button>
 
               {/* Answer */}
@@ -55,16 +46,19 @@ export const FAQ = () => (
               >
                 <Disclosure.Panel className="p-4 pt-0 bg-stone-800 flex flex-col gap-2">
                   {answer.map((line, i) => (
-                    <p key={i} className="p-4 bg-stone-700/50">
+                    <p
+                      key={i}
+                      className="p-4 bg-stone-700/50 border-l-2 border-l-green-500"
+                    >
                       {line}
                     </p>
                   ))}
                 </Disclosure.Panel>
               </Transition>
-            </div>
+            </li>
           )}
         </Disclosure>
       ))}
-    </div>
+    </ul>
   </div>
 );
