@@ -4,6 +4,7 @@ import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
+  id: "kanakfoodglobal",
   title: "Kanak Food Global",
   link: "https://kanakfoodglobal.com.ng",
   tags: ["TwelveSquares", "Designer"],
@@ -32,5 +33,5 @@ export default {
     })
   ),
   fullDescription:
-    "Kanak Foods Global operates a state-of-the-art Cold Room at Light House Estate Shopping Complex, By The Pent House Estate, Pyakasa, as part of food supply chain in Lugbe Community and Abuja.",
+    "Kanak Food Global operates a state-of-the-art Cold Room at Light House Estate Shopping Complex, By The Pent House Estate, Pyakasa, as part of food supply chain in Lugbe Community and Abuja.",
 };

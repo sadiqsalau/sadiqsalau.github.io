@@ -4,11 +4,12 @@ import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
-  title: "Emma Njoku",
-  link: "https://emmanjoku.com",
+  id: "kazeemtanimu",
+  title: "Kazeem Tanimu",
+  link: "https://kazeemtanimu.com",
   tags: ["TwelveSquares", "Designer"],
   technologies: [SiReact, SiTailwindcss],
-  description: "emmanjoku.com",
+  description: "kazeemtanimu.com",
   images: Object.values(
     import.meta.glob("./screenshots/*", {
       eager: true,
@@ -32,5 +33,5 @@ export default {
     })
   ),
   fullDescription:
-    "Emma Njoku is a consummate and dedicated executive with an exceptional entrepreneurial mindset. ",
+    "Kazeem Tanimu is the founder and CEO of Kazeem Tanimu. TM is a fashion entrepreneur, lobbyst, social political strategist, social project engineer, iLeader and founder of TM Incorporated, a 24th Century Group of companies based in Nigeria. ",
 };

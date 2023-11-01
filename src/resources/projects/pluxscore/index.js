@@ -1,14 +1,15 @@
-import { SiReact, SiTailwindcss } from "react-icons/si";
+import { SiLaravel, SiReact, SiTailwindcss } from "react-icons/si";
 
 import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
-  title: "Kazeem Tanimu",
-  link: "https://kazeemtanimu.com",
-  tags: ["TwelveSquares", "Designer"],
-  technologies: [SiReact, SiTailwindcss],
-  description: "kazeemtanimu.com",
+  id: "pluxscore",
+  title: "PluxScore",
+  link: "https://pluxscore.com",
+  tags: ["Developer"],
+  technologies: [SiReact, SiTailwindcss, SiLaravel],
+  description: "pluxscore.com",
   images: Object.values(
     import.meta.glob("./screenshots/*", {
       eager: true,
@@ -32,5 +33,5 @@ export default {
     })
   ),
   fullDescription:
-    "Kazeem Tanimu is the founder and CEO of Kazeem Tanimu. TM is a fashion entrepreneur, lobbyst, social political strategist, social project engineer, iLeader and founder of TM Incorporated, a 24th Century Group of companies based in Nigeria. ",
+    "Dive into the exhilarating world of sports with Pluxscore, the premier social media platform designed exclusively for sports enthusiasts. Connect, chat, and share your passion for all things sports in one dynamic and engaging space.",
 };

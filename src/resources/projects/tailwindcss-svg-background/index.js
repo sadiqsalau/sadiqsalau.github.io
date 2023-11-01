@@ -4,6 +4,7 @@ import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
+  id: "tailwindcss-svg-background",
   title: "tailwindcss-svg-background",
   link: "https://www.npmjs.com/package/tailwindcss-svg-background",
   repo: "https://github.com/sadiqsalau/tailwindcss-svg-background",

@@ -1,14 +1,15 @@
-import { SiLaravel, SiReact, SiTailwindcss } from "react-icons/si";
+import { SiReact, SiTailwindcss } from "react-icons/si";
 
 import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
-  title: "PluxScore",
-  link: "https://pluxscore.com",
-  tags: ["Developer"],
-  technologies: [SiReact, SiTailwindcss, SiLaravel],
-  description: "pluxscore.com",
+  id: "emmanjoku",
+  title: "Emma Njoku",
+  link: "https://emmanjoku.com",
+  tags: ["TwelveSquares", "Designer"],
+  technologies: [SiReact, SiTailwindcss],
+  description: "emmanjoku.com",
   images: Object.values(
     import.meta.glob("./screenshots/*", {
       eager: true,
@@ -32,5 +33,5 @@ export default {
     })
   ),
   fullDescription:
-    "Dive into the exhilarating world of sports with Pluxscore, the premier social media platform designed exclusively for sports enthusiasts. Connect, chat, and share your passion for all things sports in one dynamic and engaging space.",
+    "Emma Njoku is a consummate and dedicated executive with an exceptional entrepreneurial mindset. ",
 };

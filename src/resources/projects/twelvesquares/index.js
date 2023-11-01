@@ -4,6 +4,7 @@ import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
+  id: "twelvesquares",
   title: "Twelvesquares",
   link: "https://twelvesquares.net",
   tags: ["Developer"],

@@ -4,6 +4,7 @@ import icon from "./project-icon.png?w=80&h=80&format=webp";
 
 export default {
   icon,
+  id: "laravel-otp",
   title: "sadiqsalau/laravel-otp",
   link: "https://packagist.org/packages/sadiqsalau/laravel-otp",
   repo: "https://github.com/sadiqsalau/laravel-otp",
