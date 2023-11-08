@@ -4,15 +4,12 @@ import Lightbox from "yet-another-react-lightbox";
 import Zoom from "yet-another-react-lightbox/plugins/zoom";
 import clsx from "clsx";
 import { ProjectPhotoAlbum } from "@/components/project/project-photo-album";
-import { useAppContext } from "@/app-provider";
 import { useState } from "react";
 
 import { ProjectModalContainer } from "./project-modal-container";
 import { ProjectModalHeader } from "./project-modal-header";
 
-export const ProjectModal = () => {
-  const { project, showProjectModal, closeProject } = useAppContext();
-
+export const ProjectModal = ({ project, show, onClose }) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(-1);
 
   const handleImageClick = ({ index }) => {
@@ -23,20 +20,17 @@ export const ProjectModal = () => {
 
   const handleModalClose = () => {
     if (currentImageIndex < 0) {
-      closeProject();
+      onClose();
     }
   };
 
   return (
     <>
-      <ProjectModalContainer
-        show={showProjectModal}
-        closeModal={handleModalClose}
-      >
+      <ProjectModalContainer show={show} closeModal={handleModalClose}>
         {project ? (
           <div className="space-y-4">
             {/* Header */}
-            <ProjectModalHeader project={project} closeModal={closeProject} />
+            <ProjectModalHeader project={project} closeModal={onClose} />
 
             {/* Full Description */}
             {project.fullDescription ? (
