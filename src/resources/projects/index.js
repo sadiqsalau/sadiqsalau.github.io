@@ -5,9 +5,6 @@ const projects = [
   "emmanjoku",
   "kanakfoodglobal",
   "hedgromimcs",
-  "laravel-otp",
-  "mochi",
-  "tailwindcss-svg-background",
 ];
 
 export default Object.values(
